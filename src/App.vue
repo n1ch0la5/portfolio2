@@ -13,7 +13,7 @@ const year: number = new Date().getFullYear()
       </div>
     </div>
     <div class="flex justify-center py-8">
-      <p>&copy;{{year}} Nicholas S. Johnson Web Developer Portfolio.</p>
+      <p class="text-sm font-thin">&copy;{{year}} Nicholas S. Johnson Web Developer Portfolio.</p>
     </div>
   </div>
 </template>
