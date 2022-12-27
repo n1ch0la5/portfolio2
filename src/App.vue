@@ -2,7 +2,7 @@
 const year: number = new Date().getFullYear()
 </script>
 <template>
-<div class="max-w-7xl mx-auto p-8 pt-4 md:p-12 md:pt-6 md:pb-8 shadow-2xl bg-[#e7e8e9] border border-gray-400 min-h-screen">
+<div class="max-w-7xl mx-auto p-8 pt-4 md:p-12 md:pt-6 md:pb-8 shadow-2xl bg-[#e7e8e9] border border-gray-400 min-h-screen lg:flex lg:flex-col lg:justify-between">
   <div>
     <div class="w-full text-center lg:text-left lg:flex justify-between items-center py-6 md:mb-8">
       <div class="mb-8 lg:mb-0 flex flex-col items-center lg:items-start">
@@ -10,7 +10,7 @@ const year: number = new Date().getFullYear()
         <p class="text-sm font-light">Full Stack Web Developer</p>
       </div>
       <nav class="font-thin lg:pr-10 ">
-        <router-link class="mr-4" to="/" exact>Home</router-link>
+        <router-link class="mr-6" to="/" exact>Home</router-link>
         <router-link to="/gallery">Gallery</router-link>
       </nav>
     </div>
