@@ -12,7 +12,7 @@ const year: number = new Date().getFullYear()
         <router-view></router-view>
       </div>
     </div>
-    <div class="flex justify-center py-8">
+    <div class="flex justify-center py-8 text-center">
       <p class="text-sm font-thin">&copy;{{year}} Nicholas S. Johnson Web Developer Portfolio.</p>
     </div>
   </div>

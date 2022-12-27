@@ -41,7 +41,14 @@ function getSvgUrl(name: string) {
           :src="getSvgUrl(logo)"
           class="h-8 mr-3" />
         </div>
-      <p class="text-base text-gray-600 mb-8"> {{ selected.about }} </p>
+      <p class="text-base text-gray-600 mb-12"> {{ selected.about }} </p>
+      <div>
+          <img 
+            class=" mx-auto h-full w-full object-cover object-center md:hidden"
+            :src="getImageUrl(selected.image)" 
+            :alt="selected.name"
+            :title="selected.name">
+          </div>
     </div>
     <div class="w-full lg:w-2/3 order-1 md:order-2">
         <div class="grid grid-cols-2 gap-6">
