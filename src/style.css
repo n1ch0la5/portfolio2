@@ -13,7 +13,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  @apply bg-gradient-to-t from-gray-400 to-gray-300 min-h-screen;
+  @apply bg-[#e7e8e9] min-h-screen;
 }
 
 h1 {
