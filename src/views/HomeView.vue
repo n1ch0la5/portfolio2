@@ -28,7 +28,7 @@ const devLogos = [
          As a web developer with a passion for creating intuitive and engaging user experiences, I have honed my skills over the past 15 years to become proficient in multiple languages and frameworks including Laravel, Vue.js, ReactJS, Typescript, and Wordpress.
       </p>
       <p class="mb-4">  
-        This site was built with a custom vite/vue3 github template created by me for rapid development. See vite-vue3-starter for the template and portfolio2 for this site.
+        This site was built with a custom vite/vue3/tailwindcss github template created by me for rapid development. See vite-vue3-starter for the template and portfolio2 for this site.
       </p>
       </div>
       <div class="mb-16">
