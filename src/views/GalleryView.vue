@@ -31,7 +31,7 @@ function getSvgUrl(name: string) {
 </script>
 <template>
   <div class="flex flex-col md:flex-row md:justify-between md:items-start pb-8">
-    <div class="w-full lg:w-1/3 lg:pl-4 lg:pr-10 mb-24 lg:mb-0 order-2 lg:order-1">
+    <div class="w-full lg:w-1/3 lg:pl-4 lg:pr-10 mb-24 lg:mb-0 order-2 md:order-1">
       <h1 class="mt-12 text-2xl mb-2">{{ selected.title }}</h1>
       <p class="text-sm font-semibold text-gray-600 mb-4"> {{ selected.description }} </p>
       <div class="flex justify-start items-center mb-3">
@@ -43,7 +43,7 @@ function getSvgUrl(name: string) {
         </div>
       <p class="text-base text-gray-600 mb-8"> {{ selected.about }} </p>
     </div>
-    <div class="w-full lg:w-2/3 order-1 lg:order-2">
+    <div class="w-full lg:w-2/3 order-1 md:order-2">
         <div class="grid grid-cols-2 gap-6">
           <div 
             v-for="(project) in projects" 
@@ -63,7 +63,7 @@ function getSvgUrl(name: string) {
               <h3 class="text-gray-200 font-light tracking-wide">
                 {{ project.name }}
               </h3>
-              <div class="flex">
+              <div class="hidden lg:flex">
                 <img 
                 v-for="logo in project.logos" 
                 :key="logo" 
