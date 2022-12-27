@@ -17,8 +17,8 @@ const devLogos = [
 ]
 </script>
 <template>
-  <div class="md:flex md:justify-between pb-8">
-    <div class="w-full lg:w-7/12 pt-12 lg:pl-4 md:pr-8 lg:pr-32 mb-24 lg:mb-0">
+  <div class="lg:flex lg:justify-between pb-8">
+    <div class="w-full lg:w-7/12 pt-12 lg:pl-4 lg:pr-8 lg:pr-32 mb-24 lg:mb-0">
       <h2 class="text-3xl font-bold tracking-tight mb-6">Hi, my name is Nick <span class="sr-only">Johnson</span></h2>
       <div class="text-gray-600 pb-10 leading-relaxed">
       <p class="underline font-semibold text-base mb-4 tracking-wide text-gray-800">
@@ -31,7 +31,7 @@ const devLogos = [
         This site was built with a custom vite/vue3/tailwindcss github template created by me for rapid development. See vite-vue3-starter for the template and portfolio2 for this site on my Github profile.
       </p>
       </div>
-      <div class="mb-16 text-center md:text-left">
+      <div class="mb-16 text-center lg:text-left">
         <router-link class="mx-auto font-semibold text-center px-8 py-3 rounded-full bg-gray-100 shadow-sm hover:bg-gray-50" to="/gallery">View Gallery <ArrowLongRightIcon class="h-5 inline" /></router-link>
       </div>
       <div class="relative">
