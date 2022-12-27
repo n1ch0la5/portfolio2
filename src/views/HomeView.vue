@@ -24,14 +24,14 @@ const devLogos = [
       <p class="underline font-semibold text-base mb-4 tracking-wide text-gray-800">
         A little about me and my favorite technologies.
       </p>
-      <p class="mb-4">
+      <p class="mb-6">
          As a web developer with a passion for creating intuitive and engaging user experiences, I have honed my skills over the past 15 years to become proficient in multiple languages and frameworks including Laravel, Vue.js, ReactJS, Typescript, and Wordpress.
       </p>
-      <p class="mb-4">  
-        This site was built with a custom vite/vue3/tailwindcss github template created by me for rapid development. See vite-vue3-starter for the template and portfolio2 for this site on my Github profile.
+      <p class="mb-4 pt-6 border-t border-gray-300">  
+        This site was built with a custom vite/vue3/tailwindcss github template created by me for rapid development. See vite-vue3-starter for the template and portfolio2 for this site on my <a class="font-semibold hover:underline" href="https://github.com/n1ch0la5" target="_blank">Github profile</a>.
       </p>
       </div>
-      <div class="mb-16 text-center lg:text-left">
+      <div class="mb-20 text-center lg:text-left">
         <router-link class="mx-auto font-semibold text-center px-8 py-3 rounded-full bg-gray-100 shadow-sm hover:bg-gray-50" to="/gallery">View Gallery <ArrowLongRightIcon class="h-5 inline" /></router-link>
       </div>
       <div class="relative">
