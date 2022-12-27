@@ -9,7 +9,7 @@ const year: number = new Date().getFullYear()
         <h1 class="text-xl font-semibold"><a href="/" class="">Nicholas Johnson</a></h1>
         <p class="text-sm font-light">Full Stack Web Developer</p>
       </div>
-      <nav class="font-thin lg:pr-10 ">
+      <nav class="font-extrathin lg:pr-10 ">
         <router-link class="mr-6" to="/" exact>Home</router-link>
         <router-link to="/gallery">Gallery</router-link>
       </nav>
