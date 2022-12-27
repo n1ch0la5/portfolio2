@@ -18,7 +18,7 @@ const devLogos = [
 </script>
 <template>
   <div class="lg:flex lg:justify-between pb-8">
-    <div class="w-full lg:w-7/12 pt-12 lg:pl-4 lg:pr-8 lg:pr-32 mb-24 lg:mb-0">
+    <div class="w-full lg:w-7/12 pt-12 lg:pl-4 lg:pr-32 mb-24 lg:mb-0">
       <h2 class="text-3xl font-bold tracking-tight mb-6">Hi, my name is Nick <span class="sr-only">Johnson</span></h2>
       <div class="text-gray-600 pb-10 leading-relaxed">
       <p class="underline font-semibold text-base mb-4 tracking-wide text-gray-800">
