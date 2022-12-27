@@ -3,8 +3,11 @@
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
+    "strict": true,
     "importHelpers": true,
-    "isolatedModules": true,
-    "noEmit": true
-  }
+    "isolatedModules": false,
+    "noEmit": true,
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }

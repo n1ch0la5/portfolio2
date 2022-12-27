@@ -5,8 +5,11 @@ module.exports = {
     },
     "extends": [
         "eslint:recommended",
-        "plugin:vue/vue3-essential",
-        "eslint-config-prettier"
+        "plugin:vue/vue3-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "eslint-config-prettier",
+        '@vue/typescript/recommended',
+        'prettier',
     ],
     "overrides": [
     ],
