@@ -16,6 +16,11 @@
   @apply bg-[#e7e8e9] min-h-screen;
 }
 
+a {
+  @apply cursor-pointer;
+}
+
+
 h1 {
   font-family: 'Catamaran', sans-serif;
 }

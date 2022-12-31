@@ -10,7 +10,7 @@
             <p class="text-sm font-semibold">Contact me:</p> 
             <p class="tracking-wider font-normal">nicholas.johnson78 "at" gmail.com</p>
           </div>
-          <table class="table-auto w-full text-left text-sm hidden lg:block mb-6">
+          <table class="table-auto w-full text-left text-sm hidden lg:block mb-8">
             <thead>
               <tr>
                 <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-300">Company</th>
@@ -18,7 +18,7 @@
                 <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-300">Years Active</th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-gray-900 bg-gray-800">
+            <tbody class="divide-y divide-gray-900 bg-gray-800 mb-4">
               <tr>
                 <td class="whitespace-nowrap px-2 py-3 text-sm text-gray-400">Cardinal Financial</td>
                 <td class="whitespace-nowrap px-2 py-3 text-sm text-gray-400">FS Engineer</td>
@@ -36,6 +36,7 @@
               </tr>
             </tbody>
           </table> 
+          <a class="border-b border-gray-400 cursor-pointer" href="/downloads/nick-johnson-resume.pdf" download>Download My Resume</a>
         </div>
         <div class="flex items-center justify-around lg:py-6">
           <a href="https://github.com/n1ch0la5" target="_blank">

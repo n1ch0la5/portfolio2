@@ -30,7 +30,7 @@ function getSvgUrl(name: string) {
 <template>
   <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start pb-8 pt-6 lg:pt-0">
     <div class="w-full lg:w-1/3 lg:pr-10 mb-24 lg:mb-0 order-2 lg:order-1">
-      <h1 class="mt-12 lg:mt-6 text-2xl mb-1">{{ selected.title }}</h1>
+      <h1 class="mt-8 lg:mt-4 text-2xl mb-1">{{ selected.title }}</h1>
       <p class=" font-light text-gray-600 mb-2 italic"> {{ selected.url }} </p>
       <p class="text-sm font-semibold text-gray-600 mb-4"> {{ selected.description }} </p>
       <div class="flex justify-start items-center mb-3">
