@@ -47,15 +47,22 @@ function getSvgUrl(name: string) {
             :src="getImageUrl(selected.image)" 
             :alt="selected.name"
             :title="selected.name">
-          </div>
+      </div>
     </div>
     <div class="w-full lg:w-2/3 order-1 lg:order-2">
-        <div class="grid grid-cols-2 gap-6">
+    <div class="mb-8">
+          <img 
+            class=" mx-auto h-full w-full object-cover object-center hidden lg:block"
+            :src="getImageUrl(selected.image)" 
+            :alt="selected.name"
+            :title="selected.name">
+      </div>
+        <div class="grid grid-cols-4 gap-6">
           <div 
             v-for="(project) in projects" 
             :key="project.id"
-            :class="(isSelected(project.id)) ? 'border-8 border-gray-50 shadow-xl grayscale-0 opacity-100' : 'grayscale opacity-60'"
-            class="w-full cursor-pointer hover:grayscale-0 hover:border-8 hover:border-gray-50 hover:shadow-xl transition-all duration-150 hover:opacity-100"
+            :class="(isSelected(project.id)) ? 'border-8 border-slate-700 shadow-lg grayscale-0 opacity-100' : 'grayscale opacity-60'"
+            class="w-full cursor-pointer hover:grayscale-0 hover:border-4 hover:border-slate-700 hover:shadow transition-all duration-150 hover:opacity-100"
             @click="selectedId = project.id"
             >
             <div class="overflow-hidden">
@@ -64,18 +71,6 @@ function getSvgUrl(name: string) {
               :src="getImageUrl(project.image)" 
               :alt="project.name"
               :title="project.name">
-            </div>
-            <div class="bg-gray-700 flex justify-between items-center p-3 pl-5">
-              <h3 class="text-gray-200 font-light tracking-wide">
-                {{ project.name }}
-              </h3>
-              <div class="hidden lg:flex">
-                <img 
-                v-for="logo in project.logos" 
-                :key="logo" 
-                :src="getSvgUrl(logo)"
-                class="h-5 mr-2" />
-              </div>
             </div>
           </div>
         </div>
