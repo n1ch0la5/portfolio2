@@ -43,7 +43,7 @@ function getSvgUrl(name: string) {
       <p class="text-base text-gray-600 mb-12 -tracking-tight"> {{ selected.about }} </p>
       <div>
           <img 
-            class=" mx-auto h-full w-full object-cover object-center lg:hidden"
+            class=" mx-auto h-full w-full object-cover object-center border border-slate-300 shadow-lg lg:hidden"
             :src="getImageUrl(selected.image)" 
             :alt="selected.name"
             :title="selected.name">
@@ -52,7 +52,7 @@ function getSvgUrl(name: string) {
     <div class="w-full lg:w-2/3 order-1 lg:order-2">
     <div class="mb-8">
           <img 
-            class=" mx-auto h-full w-full object-cover object-center hidden lg:block"
+            class="mx-auto h-full w-full object-cover object-center hidden lg:block border border-slate-300 shadow-lg"
             :src="getImageUrl(selected.image)" 
             :alt="selected.name"
             :title="selected.name">
