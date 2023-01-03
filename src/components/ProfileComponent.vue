@@ -6,7 +6,7 @@
           <p class="font-bold">Nicholas S. Johnson</p>
           <p class="text-sm mb-3">Full Stack Developer</p>
           <p class="text-lg text-center italic mb-4">"My extensive experience and dedication to excellence make me a valuable asset to any team, and I am excited to continue crafting innovative solutions for clients."</p>
-           <div class="text-gray-300 mb-10 lg:mb-6">
+           <div class="text-gray-300 lg:mb-10 mb-6">
             <p class="text-sm font-semibold">Contact me:</p> 
             <p class="tracking-wider font-normal">nicholas.johnson78 "at" gmail.com</p>
           </div>
@@ -18,7 +18,7 @@
                 <th class="px-3 py-3.5 text-left text-sm font-semibold text-gray-300">Years Active</th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-gray-900 bg-gray-800 mb-4">
+            <tbody class="divide-y divide-gray-900 bg-gray-800 mb-1 lg:mb-4">
               <tr>
                 <td class="whitespace-nowrap px-2 py-3 text-sm text-gray-400">Cardinal Financial</td>
                 <td class="whitespace-nowrap px-2 py-3 text-sm text-gray-400">FS Engineer</td>
@@ -38,7 +38,7 @@
           </table> 
           <a class="border-b border-gray-400 cursor-pointer" href="/downloads/nick-johnson-resume.pdf" download>Download My Resume</a>
         </div>
-        <div class="flex items-center justify-around lg:py-6">
+        <div class="flex items-center justify-around pt-8 lg:py-6">
           <a href="https://github.com/n1ch0la5" target="_blank">
             <img src="../assets/images/github.png" alt="github" title="github" class="h-5 cursor-pointer drop-shadow-xl">
           </a>
