@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { BeakerIcon } from '@heroicons/vue/24/solid'
-import { ArrowLongRightIcon } from '@heroicons/vue/24/solid'
+import { BeakerIcon, ArrowLongRightIcon } from '@heroicons/vue/24/solid'
 import ProfileComponent from '../components/ProfileComponent.vue'
 
 function getImageUrl(name: string) {
@@ -19,16 +18,11 @@ const devLogos = [
 <template>
   <div class="lg:flex lg:justify-between pb-8">
     <div class="w-full pl-0 lg:w-7/12 pt-6 lg:pt-12 lg:pr-32 mb-24 lg:mb-0">
-      <h2 class="text-3xl font-bold tracking-tight mb-6">Hi, my name is Nick <span class="sr-only">Johnson</span></h2>
+      <h2 class="text-3xl font-bold tracking-tight mb-6">Hi, I'm Nick.</h2>
       <div class="text-gray-600 pb-10 leading-relaxed">
-      <p class="underline font-semibold text-base mb-4 tracking-wide text-gray-800">
-        A little about me and my favorite technologies.
-      </p>
+
       <p class="mb-6">
-         As a web developer with a passion for creating intuitive and engaging user experiences, I have honed my skills over the past 15 years to become proficient in multiple languages and frameworks including Laravel, Vue.js, ReactJS, Typescript, and Wordpress.
-      </p>
-      <p class="mb-4 pt-6 border-t border-gray-300">  
-        This site was built with a custom vite/vue3/tailwindcss github template created by me for rapid development. You can view the Vite-Vue3-Starter and Portfolio2 repositories on my <a class="font-semibold hover:underline" href="https://github.com/n1ch0la5" target="_blank">Github profile</a> for more information.
+         I'm a full stack engineer with a passion for creating intuitive and engaging user experiences. I have honed my skills for over 15 years to become proficient in multiple languages and frameworks including Laravel, Vue.js, ReactJS, Typescript, Wordpress, and more.
       </p>
       </div>
       <div class="mb-20 text-center lg:text-left">
