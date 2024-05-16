@@ -4,7 +4,7 @@
         <div class="text-center">
           <img src="../assets/images/me2.png" alt="Nick Johnson" class="absolute -top-8 left-0 right-0 mx-auto block border-2 border-gray-800 rounded-full w-36 h-36 shadow">
           <p class="font-bold">Nicholas S. Johnson</p>
-          <p class="text-sm mb-3">Full Stack Developer</p>
+          <p class="text-sm mb-3">Full Stack Engineer</p>
           <p class="text-lg text-center italic mb-4">"My extensive experience and dedication to excellence make me a valuable asset to any team, and I am excited to continue crafting innovative solutions for clients."</p>
            <div class="text-gray-300 lg:mb-10 mb-6">
             <p class="text-sm font-semibold">Contact me:</p> 
