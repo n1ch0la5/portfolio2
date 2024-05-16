@@ -90,7 +90,7 @@ const previousProject = (): void => {
             :alt="selected.name"
             :title="selected.name">
       </div>
-        <div class="flex items-center space-x-6">
+        <div class="flex items-center space-x-4">
           <div 
             v-for="(project) in projects" 
             :key="project.id"
