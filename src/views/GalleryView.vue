@@ -85,7 +85,7 @@ const previousProject = (): void => {
       <div class="mb-8">
         
           <img 
-            class="mx-auto h-full w-full object-cover object-center lg:block border border-slate-300 shadow rounded-xl"
+            class="mx-auto h-full w-full object-cover object-center lg:block border border-slate-300 shadow rounded-2xl"
             :src="getImageUrl(selected.image)" 
             :alt="selected.name"
             :title="selected.name">
@@ -94,8 +94,8 @@ const previousProject = (): void => {
           <div 
             v-for="(project) in projects" 
             :key="project.id"
-            :class="(isSelected(project.id)) ? 'border-2 border-cyan-500 shadow grayscale-0 opacity-100' : 'grayscale opacity-60'"
-            class="w-28 cursor-pointer hover:grayscale-0 hover:border-2 hover:scale-105 hover:border-cyan-500 hover:shadow transition-all duration-200 hover:opacity-100"
+            :class="(isSelected(project.id)) ? 'border-2 border-sky-500 shadow grayscale-0 opacity-100' : 'grayscale opacity-60'"
+            class="w-28 rounded cursor-pointer hover:grayscale-0 hover:border-2 hover:scale-105 hover:border-sky-500 hover:shadow transition-all duration-300 hover:opacity-100"
             @click="selectedId = project.id"
             >
             <div class="overflow-hidden">
