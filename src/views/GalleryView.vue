@@ -7,6 +7,7 @@ const store = useProjectStore();
 const {projects, projectCount } = store;
 
 const selectedId = ref(projects[0].id)
+
 const selected = computed(() => {
   return projects.filter((p) => 
     p.id === selectedId.value

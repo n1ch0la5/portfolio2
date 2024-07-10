@@ -21,9 +21,14 @@ const devLogos = [
       <h2 class="text-3xl font-bold tracking-tight mb-6">Hi, I'm Nick.</h2>
       <div class="text-gray-600 pb-10 leading-relaxed">
 
-      <p class="mb-6">
-         I'm a full stack engineer with a passion for creating intuitive and engaging user experiences. I have honed my skills for over 15 years to become proficient in multiple languages and frameworks including Laravel, Vue.js, ReactJS, Typescript, Wordpress, and more.
-      </p>
+      <div class="mb-6 space-y-3">
+          <p>
+            I’m passionate about creating innovative web solutions and I’d love to chat about how we can bring your ideas to life. Whether it’s building a dynamic web app, optimizing user experiences, or integrating cutting-edge technologies, I’m here to help. 
+          </p>
+          <p>
+            I have honed my skills for over 15 years to become proficient in multiple languages and frameworks including PHP/Laravel, VueJS, ReactJS, Typescript and more.
+          </p>
+        </div>
       </div>
       <div class="mb-20 text-center lg:text-left">
         <router-link class="mx-auto font-semibold text-center px-8 py-3 rounded-full bg-gray-100 shadow-sm hover:bg-gray-50" to="/gallery">View Gallery <ArrowLongRightIcon class="h-5 inline" /></router-link>
