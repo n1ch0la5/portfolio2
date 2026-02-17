@@ -145,7 +145,7 @@ export const projects: Project[] = [
       "An iOS app that transforms event tickets into shareable social media content. Scan movie, concert, or sports tickets with AI-powered recognition, customize with official artwork, and build a personal entertainment timeline.",
     tech: ["iOS", "Swift", "Supabase", "AI/Camera"],
     gradient: "from-amber-500 to-orange-600",
-    link: "https://getpasstime.netlify.app",
+    link: "https://getpasstime.app",
     image: "/images/passtime.png",
   },
   {
