@@ -7,15 +7,12 @@ export default function Contact() {
         <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-12 text-center sm:p-16">
           {/* Background accent */}
           <div className="pointer-events-none absolute inset-0">
-            <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-violet-600/10 blur-3xl" />
-            <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-fuchsia-600/10 blur-3xl" />
+            <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-violet-600/5 blur-3xl" />
           </div>
 
           <div className="relative">
             <h2 className="mb-4 text-3xl font-bold sm:text-4xl">
-              <span className="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent">
-                Let&apos;s Work Together
-              </span>
+Let&apos;s Work Together
             </h2>
             <p className="mx-auto mb-10 max-w-lg text-lg text-gray-400">
               I&apos;m always open to discussing new opportunities, interesting
@@ -24,7 +21,7 @@ export default function Contact() {
 
             <a
               href={`mailto:${personalInfo.email}`}
-              className="inline-block rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 px-10 py-4 text-lg font-semibold text-white shadow-lg shadow-violet-500/25 transition-shadow hover:shadow-violet-500/40"
+              className="inline-block rounded-full bg-violet-600 px-10 py-4 text-lg font-semibold text-white transition-colors hover:bg-violet-500"
             >
               Send Me an Email
             </a>
