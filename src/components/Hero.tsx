@@ -5,9 +5,8 @@ export default function Hero() {
     <section className="relative flex min-h-screen items-center overflow-hidden">
       {/* Background gradient blobs */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -left-40 -top-40 h-96 w-96 rounded-full bg-violet-600/20 blur-3xl" />
-        <div className="absolute -right-40 top-1/3 h-96 w-96 rounded-full bg-fuchsia-600/20 blur-3xl" />
-        <div className="absolute -bottom-40 left-1/3 h-96 w-96 rounded-full bg-cyan-600/15 blur-3xl" />
+        <div className="absolute -left-40 -top-40 h-96 w-96 rounded-full bg-violet-600/10 blur-3xl" />
+        <div className="absolute -right-40 top-1/3 h-64 w-64 rounded-full bg-violet-600/5 blur-3xl" />
       </div>
 
       <div className="relative mx-auto max-w-6xl px-6 py-32">
@@ -15,7 +14,7 @@ export default function Hero() {
           Hey there, I&apos;m
         </p>
         <h1 className="mb-4 text-5xl font-extrabold leading-tight tracking-tight sm:text-6xl lg:text-7xl">
-          <span className="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-white via-violet-300 to-violet-400 bg-clip-text text-transparent">
             {personalInfo.name}
           </span>
         </h1>
@@ -29,7 +28,7 @@ export default function Hero() {
         <div className="flex flex-wrap gap-4">
           <a
             href="#projects"
-            className="rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 px-8 py-3 font-semibold text-white shadow-lg shadow-violet-500/25 transition-shadow hover:shadow-violet-500/40"
+            className="rounded-full bg-violet-600 px-8 py-3 font-semibold text-white transition-colors hover:bg-violet-500"
           >
             View My Work
           </a>

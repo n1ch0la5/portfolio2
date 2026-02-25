@@ -6,9 +6,7 @@ export default function Projects() {
     <section id="projects" className="py-24">
       <div className="mx-auto max-w-6xl px-6">
         <h2 className="mb-12 text-3xl font-bold sm:text-4xl">
-          <span className="bg-gradient-to-r from-fuchsia-400 to-pink-400 bg-clip-text text-transparent">
-            Featured Projects
-          </span>
+Featured Projects
         </h2>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -68,7 +66,7 @@ export default function Projects() {
                   {project.tech.map((t) => (
                     <span
                       key={t}
-                      className={`rounded-full bg-gradient-to-r ${project.gradient} px-3 py-1 text-xs font-semibold text-white`}
+                      className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-gray-400"
                     >
                       {t}
                     </span>

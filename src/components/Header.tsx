@@ -18,7 +18,7 @@ export default function Header() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a
           href="#"
-          className="bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-xl font-bold text-transparent"
+          className="text-xl font-bold text-violet-400"
         >
           NJ
         </a>

@@ -5,9 +5,7 @@ export default function About() {
     <section id="about" className="py-24">
       <div className="mx-auto max-w-6xl px-6">
         <h2 className="mb-12 text-3xl font-bold sm:text-4xl">
-          <span className="bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
-            About Me
-          </span>
+About Me
         </h2>
 
         <div className="grid gap-12 lg:grid-cols-3">
@@ -31,7 +29,7 @@ export default function About() {
                 <p className="mb-1 text-sm font-medium uppercase tracking-wider text-gray-500">
                   {item.label}
                 </p>
-                <p className="bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-2xl font-bold text-transparent">
+                <p className="text-2xl font-bold text-violet-400">
                   {item.value}
                 </p>
               </div>
