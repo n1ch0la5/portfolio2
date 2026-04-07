@@ -10,13 +10,11 @@ export default function Hero() {
       </div>
 
       <div className="relative mx-auto max-w-6xl px-6 py-32">
-        <p className="mb-4 text-lg font-medium text-violet-400">
+        <p className="mb-4 text-lg font-medium text-white">
           Hey there, I&apos;m
         </p>
-        <h1 className="mb-4 text-5xl font-extrabold leading-tight tracking-tight sm:text-6xl lg:text-7xl">
-          <span className="bg-gradient-to-r from-white via-violet-300 to-violet-400 bg-clip-text text-transparent">
-            {personalInfo.name}
-          </span>
+        <h1 className="mb-4 text-5xl font-extrabold leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
+          {personalInfo.name}
         </h1>
         <h2 className="mb-6 text-2xl font-semibold text-gray-300 sm:text-3xl">
           {personalInfo.title}
