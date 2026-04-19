@@ -5,8 +5,8 @@ export default function Hero() {
     <section className="relative flex min-h-screen items-center overflow-hidden">
       {/* Background gradient blobs */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -left-40 -top-40 h-96 w-96 rounded-full bg-violet-600/10 blur-3xl" />
-        <div className="absolute -right-40 top-1/3 h-64 w-64 rounded-full bg-violet-600/5 blur-3xl" />
+        <div className="absolute -left-40 -top-40 h-96 w-96 rounded-full bg-blue-600/10 blur-3xl" />
+        <div className="absolute -right-40 top-1/3 h-64 w-64 rounded-full bg-blue-600/5 blur-3xl" />
       </div>
 
       <div className="relative mx-auto max-w-6xl px-6 py-32">
@@ -26,7 +26,7 @@ export default function Hero() {
         <div className="flex flex-wrap gap-4">
           <a
             href="#projects"
-            className="rounded-full bg-violet-600 px-8 py-3 font-semibold text-white transition-colors hover:bg-violet-500"
+            className="rounded-full bg-blue-600 px-8 py-3 font-semibold text-white transition-colors hover:bg-blue-500"
           >
             View My Work
           </a>
@@ -43,7 +43,7 @@ export default function Hero() {
             href={personalInfo.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-500 transition-colors hover:text-violet-400"
+            className="text-gray-500 transition-colors hover:text-blue-400"
             aria-label="GitHub"
           >
             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -52,7 +52,7 @@ export default function Hero() {
           </a>
           <a
             href={`mailto:${personalInfo.email}`}
-            className="text-gray-500 transition-colors hover:text-violet-400"
+            className="text-gray-500 transition-colors hover:text-blue-400"
             aria-label="Email"
           >
             <svg

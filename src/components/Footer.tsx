@@ -10,13 +10,13 @@ export default function Footer() {
             href="https://github.com/n1ch0la5"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-gray-600 transition-colors hover:text-violet-400"
+            className="text-sm text-gray-600 transition-colors hover:text-blue-400"
           >
             GitHub
           </a>
           <a
             href="mailto:nicholas.johnson78@gmail.com"
-            className="text-sm text-gray-600 transition-colors hover:text-violet-400"
+            className="text-sm text-gray-600 transition-colors hover:text-blue-400"
           >
             Email
           </a>

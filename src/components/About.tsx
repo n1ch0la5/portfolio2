@@ -29,7 +29,7 @@ About Me
                 <p className="mb-1 text-sm font-medium uppercase tracking-wider text-gray-500">
                   {item.label}
                 </p>
-                <p className="text-2xl font-bold text-violet-400">
+                <p className="text-2xl font-bold text-blue-400">
                   {item.value}
                 </p>
               </div>

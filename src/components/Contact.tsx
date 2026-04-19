@@ -7,7 +7,7 @@ export default function Contact() {
         <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-12 text-center sm:p-16">
           {/* Background accent */}
           <div className="pointer-events-none absolute inset-0">
-            <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-violet-600/5 blur-3xl" />
+            <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-blue-600/5 blur-3xl" />
           </div>
 
           <div className="relative">
@@ -21,7 +21,7 @@ Let&apos;s Work Together
 
             <a
               href={`mailto:${personalInfo.email}`}
-              className="inline-block rounded-full bg-violet-600 px-10 py-4 text-lg font-semibold text-white transition-colors hover:bg-violet-500"
+              className="inline-block rounded-full bg-blue-600 px-10 py-4 text-lg font-semibold text-white transition-colors hover:bg-blue-500"
             >
               Send Me an Email
             </a>
@@ -29,14 +29,14 @@ Let&apos;s Work Together
             <div className="mt-10 flex flex-wrap items-center justify-center gap-8 text-gray-500">
               <a
                 href={`mailto:${personalInfo.email}`}
-                className="transition-colors hover:text-violet-400"
+                className="transition-colors hover:text-blue-400"
               >
                 {personalInfo.email}
               </a>
               <span className="hidden sm:inline">·</span>
               <a
                 href={`tel:${personalInfo.phone}`}
-                className="transition-colors hover:text-violet-400"
+                className="transition-colors hover:text-blue-400"
               >
                 {personalInfo.phone}
               </a>
@@ -45,7 +45,7 @@ Let&apos;s Work Together
                 href={personalInfo.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="transition-colors hover:text-violet-400"
+                className="transition-colors hover:text-blue-400"
               >
                 GitHub
               </a>

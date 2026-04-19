@@ -35,7 +35,7 @@ export interface SkillCategory {
 export const skills: SkillCategory[] = [
   {
     category: "Frontend",
-    color: "from-violet-500 to-fuchsia-500",
+    color: "from-blue-500 to-sky-400",
     skills: [
       { name: "Vue 2 / Vue 3" },
       { name: "React" },
@@ -136,17 +136,26 @@ export interface Project {
   link?: string;
   image?: string;
   badge?: string;
+  icon?: "chat";
 }
 
 export const projects: Project[] = [
   {
-    title: "Passtime",
+    title: "TotalMortgage.com",
     description:
-      "An iOS app that transforms event tickets into shareable social media content. Scan movie, concert, or sports tickets with AI-powered recognition, customize with official artwork, and build a personal entertainment timeline.",
-    tech: ["iOS", "Swift", "Supabase", "AI/Camera"],
-    gradient: "from-amber-500 to-orange-600",
-    link: "https://getpasstime.app",
-    image: "/images/passtime.png",
+      "A full-scale company website rebuild and optimization, migrating legacy systems to a modern stack with improved performance, SEO, and user experience.",
+    tech: ["Laravel", "Vue.js", "WordPress", "SASS"],
+    gradient: "from-pink-600 to-rose-600",
+    link: "https://www.totalmortgage.com",
+    image: "/images/tms.png",
+  },
+  {
+    title: "Embr Marketing Portal",
+    description:
+      "A comprehensive marketing management platform for Total Mortgage, enabling teams to create, manage, and distribute marketing materials at scale.",
+    tech: ["Laravel", "React", "MySQL", "REST API"],
+    gradient: "from-orange-600 to-rose-600",
+    image: "/images/embr.png",
   },
   {
     title: "ClassFindr",
@@ -159,15 +168,6 @@ export const projects: Project[] = [
     badge: "In Development",
   },
   {
-    title: "Sales Dialer App",
-    description:
-      "A desktop application built for loan officers to streamline their sales calling workflow. Features real-time call management, contact tracking, and performance analytics.",
-    tech: ["Vue 3", "TypeScript", "Vite", "Pinia"],
-    gradient: "from-violet-600 to-indigo-600",
-    link: "https://www.cardinalfinancial.com",
-    image: "/images/salesdialer.png",
-  },
-  {
     title: "Company Intranet Hub",
     description:
       "A modern internal employee platform serving as the central hub for company resources, announcements, tools, and team collaboration.",
@@ -176,21 +176,51 @@ export const projects: Project[] = [
     image: "/images/thehub.png",
   },
   {
-    title: "Embr Marketing Portal",
+    title: "Sales Dialer App",
     description:
-      "A comprehensive marketing management platform for Total Mortgage, enabling teams to create, manage, and distribute marketing materials at scale.",
-    tech: ["Laravel", "React", "MySQL", "REST API"],
-    gradient: "from-orange-600 to-rose-600",
-    image: "/images/embr.png",
+      "A desktop application built for loan officers to streamline their sales calling workflow. Features real-time call management, contact tracking, and performance analytics.",
+    tech: ["Vue 3", "TypeScript", "Vite", "Pinia"],
+    gradient: "from-blue-600 to-indigo-600",
+    link: "https://www.cardinalfinancial.com",
+    image: "/images/salesdialer.png",
   },
   {
-    title: "TotalMortgage.com",
+    title: "Embeddable Chat Widget",
     description:
-      "A full-scale company website rebuild and optimization, migrating legacy systems to a modern stack with improved performance, SEO, and user experience.",
-    tech: ["Laravel", "Vue.js", "WordPress", "SASS"],
-    gradient: "from-fuchsia-600 to-pink-600",
-    link: "https://www.totalmortgage.com",
-    image: "/images/tms.png",
+      "A chat and lead-capture widget shipped as a standalone JavaScript library using Vite's library mode. Deployed via a single script tag across multiple company websites, with a Vue-powered UI that mounts into any host page without style conflicts.",
+    tech: ["Vue", "Vite (Library Mode)", "TypeScript", "JavaScript"],
+    gradient: "from-teal-500 to-cyan-600",
+    icon: "chat",
+  },
+];
+
+export const sideProjects: Project[] = [
+  {
+    title: "Passtime",
+    description:
+      "An iOS app that transforms event tickets into shareable social media content. Scan movie, concert, or sports tickets with AI-powered recognition, customize with official artwork, and build a personal entertainment timeline.",
+    tech: ["iOS", "Swift", "Supabase", "AI/Camera"],
+    gradient: "from-amber-500 to-orange-600",
+    link: "https://getpasstime.app",
+    image: "/images/passtime.png",
+  },
+  {
+    title: "Artemis 2 Mission",
+    description:
+      "A real-time mission dashboard built for NASA's Artemis 2 lunar flyby. Featured live viewer counts, floating emoji reactions, and a synchronized \"chill beats\" button so everyone watching listened to the same song at the same moment.",
+    tech: ["Next.js", "Supabase Realtime", "WebSockets", "Tailwind CSS"],
+    gradient: "from-indigo-600 to-blue-800",
+    link: "https://artemis2mission.live",
+    image: "/images/artemis2mission.png",
+  },
+  {
+    title: "Movie Night Games",
+    description:
+      "A daily games site for movie buffs. ROLES is a Wheel of Fortune-style game where you guess the actor and the character they played. THUMBS challenges you to guess whether Siskel & Ebert gave a film a thumbs up or down.",
+    tech: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS"],
+    gradient: "from-red-600 to-rose-700",
+    link: "https://movienight.games",
+    image: "/images/movienight.png",
   },
 ];
 

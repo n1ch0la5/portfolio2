@@ -16,7 +16,7 @@ Experience
             {experience.map((job, i) => (
               <div key={i} className="relative md:pl-20">
                 {/* Timeline dot */}
-                <div className="absolute left-6 top-2 hidden h-5 w-5 rounded-full border-4 border-gray-950 bg-violet-500 md:block" />
+                <div className="absolute left-6 top-2 hidden h-5 w-5 rounded-full border-4 border-gray-950 bg-blue-500 md:block" />
 
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-8">
                   <div className="mb-4 flex flex-wrap items-start justify-between gap-2">
@@ -29,7 +29,7 @@ Experience
                         <span className="text-gray-600">· {job.type}</span>
                       </p>
                     </div>
-                    <span className="rounded-full bg-violet-500/10 px-4 py-1 text-sm font-medium text-violet-400">
+                    <span className="rounded-full bg-blue-500/10 px-4 py-1 text-sm font-medium text-blue-400">
                       {job.period}
                     </span>
                   </div>
