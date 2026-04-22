@@ -1,6 +1,6 @@
 export const personalInfo = {
   name: "Nick Johnson",
-  title: "Senior Full-Stack Developer",
+  title: "Full-Stack Engineer",
   location: "West Haven, CT",
   email: "nicholas.johnson78@gmail.com",
   phone: "203-500-0996",
@@ -12,7 +12,7 @@ export const personalInfo = {
 
 export const about = {
   summary: [
-    "Senior Full-Stack Developer who builds web applications that developers actually want to use and businesses can depend on. I work primarily with Laravel, Vue.js, and modern JavaScript, handling everything from backend APIs to interactive frontends.",
+    "Full-Stack Engineer who builds web applications that developers actually want to use and businesses can depend on. I work primarily with Laravel, Vue.js, and modern JavaScript, handling everything from backend APIs to interactive frontends.",
     "I'm a builder first. I solve problems, adapt quickly, and bring hands-on experience to the work. I'm most energized when working with teams that care about shipping solid code and aren't afraid to challenge the status quo.",
   ],
   highlights: [

@@ -8,11 +8,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Nick Johnson | Senior Full-Stack Developer",
+  title: "Nick Johnson | Full-Stack Engineer",
   description:
-    "Senior Full-Stack Developer specializing in Laravel, Vue.js, and modern JavaScript. 15+ years building clean, scalable web applications.",
+    "Full-Stack Engineer specializing in Laravel, Vue.js, and modern JavaScript. 15+ years building clean, scalable web applications.",
   keywords: [
-    "Full-Stack Developer",
+    "Full-Stack Engineer",
     "Laravel",
     "Vue.js",
     "React",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     "Nick Johnson",
   ],
   openGraph: {
-    title: "Nick Johnson | Senior Full-Stack Developer",
+    title: "Nick Johnson | Full-Stack Engineer",
     description:
-      "Senior Full-Stack Developer specializing in Laravel, Vue.js, and modern JavaScript.",
+      "Full-Stack Engineer specializing in Laravel, Vue.js, and modern JavaScript.",
     url: "https://nicksjohnson.com",
     type: "website",
   },
