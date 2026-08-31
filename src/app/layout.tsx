@@ -10,7 +10,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Nick Johnson | Full-Stack Engineer",
   description:
-    "Full-Stack Engineer specializing in Laravel, Vue.js, and modern JavaScript. 15+ years building clean, scalable web applications.",
+    "Full-Stack Engineer specializing in Laravel, Vue, React, and Next.js. I build clean, scalable web applications from backend APIs to interactive frontends.",
   keywords: [
     "Full-Stack Engineer",
     "Laravel",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Nick Johnson | Full-Stack Engineer",
     description:
-      "Full-Stack Engineer specializing in Laravel, Vue.js, and modern JavaScript.",
+      "Full-Stack Engineer specializing in Laravel, Vue, React, and Next.js.",
     url: "https://nicksjohnson.com",
     type: "website",
   },

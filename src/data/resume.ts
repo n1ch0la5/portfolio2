@@ -2,22 +2,22 @@ export const personalInfo = {
   name: "Nick Johnson",
   title: "Full-Stack Engineer",
   location: "West Haven, CT",
-  email: "nicholas.johnson78@gmail.com",
+  email: "nickjohnson.builds@gmail.com",
   phone: "203-500-0996",
   website: "https://nicksjohnson.com",
   github: "https://github.com/n1ch0la5",
   tagline:
-    "I build clean, scalable, and high-performing web applications with deep expertise in JavaScript, Vue.js, and Laravel.",
+    "I build clean, scalable, and high-performing web applications with deep expertise in Laravel, Vue, React, and Next.js.",
 };
 
 export const about = {
   summary: [
-    "Full-Stack Engineer who builds web applications that developers actually want to use and businesses can depend on. I work primarily with Laravel, Vue.js, and modern JavaScript, handling everything from backend APIs to interactive frontends.",
+    "Full-Stack Engineer who builds web applications that developers actually want to use and businesses can depend on. I work primarily with Laravel, Vue, React, and Next.js, handling everything from backend APIs to interactive frontends.",
     "I'm a builder first. I solve problems, adapt quickly, and bring hands-on experience to the work. I'm most energized when working with teams that care about shipping solid code and aren't afraid to challenge the status quo.",
   ],
   highlights: [
     { label: "Production Apps", value: "6+" },
-    { label: "Primary Stack", value: "Laravel + Vue.js" },
+    { label: "Primary Stacks", value: "Laravel + Vue · React + Next.js" },
     { label: "Location", value: "West Haven, CT" },
   ],
 };
@@ -78,6 +78,10 @@ export const skills: SkillCategory[] = [
     color: "from-orange-500 to-rose-500",
     skills: [
       { name: "Git" },
+      { name: "GitHub Actions" },
+      { name: "Docker" },
+      { name: "Jest" },
+      { name: "Pest (PHP)" },
       { name: "Vite" },
       { name: "AWS" },
       { name: "Responsive Design" },
