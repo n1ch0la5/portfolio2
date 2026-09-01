@@ -16,7 +16,6 @@ export const about = {
     "I'm a builder first. I solve problems, adapt quickly, and bring hands-on experience to the work. I'm most energized when working with teams that care about shipping solid code and aren't afraid to challenge the status quo.",
   ],
   highlights: [
-    { label: "Production Apps", value: "6+" },
     { label: "Primary Stacks", value: "Laravel + Vue · React + Next.js" },
     { label: "Location", value: "West Haven, CT" },
   ],
