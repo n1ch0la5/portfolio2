@@ -24,9 +24,9 @@ About Me
             {about.highlights.map((item) => (
               <div
                 key={item.label}
-                className="rounded-2xl border border-white/10 bg-white/5 p-6"
+                className="border border-white/10 bg-white/5 p-6"
               >
-                <p className="mb-1 text-sm font-medium uppercase tracking-wider text-gray-500">
+                <p className="mb-1 font-mono text-xs uppercase tracking-wider text-gray-500">
                   {item.label}
                 </p>
                 <p className="text-2xl font-bold text-blue-400">

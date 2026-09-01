@@ -12,7 +12,7 @@ Skills & Technologies
           {skills.map((group) => (
             <div
               key={group.category}
-              className="rounded-2xl border border-white/10 bg-white/5 p-8"
+              className="border border-white/10 bg-white/5 p-8"
             >
               <h3 className="mb-6 text-lg font-semibold text-white">
                 {group.category}
@@ -21,7 +21,7 @@ Skills & Technologies
                 {group.skills.map((skill) => (
                   <span
                     key={skill.name}
-                    className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-gray-300"
+                    className="border border-white/10 bg-white/5 px-3 py-1.5 font-mono text-xs text-gray-300"
                   >
                     {skill.name}
                   </span>

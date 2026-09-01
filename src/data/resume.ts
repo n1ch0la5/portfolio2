@@ -183,7 +183,7 @@ export const projects: Project[] = [
   {
     title: "Sales Dialer App",
     description:
-      "A desktop application built for loan officers to streamline their sales calling workflow. Features real-time call management, contact tracking, and performance analytics.",
+      "A desktop application built for loan officers to run their sales calling workflow. Features real-time call management, contact tracking, and performance analytics.",
     tech: ["Vue 3", "TypeScript", "Vite", "Pinia"],
     gradient: "from-blue-600 to-indigo-600",
     link: "https://www.cardinalfinancial.com",

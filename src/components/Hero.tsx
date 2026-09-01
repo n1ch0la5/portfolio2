@@ -3,15 +3,9 @@ import { personalInfo } from "@/data/resume";
 export default function Hero() {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden">
-      {/* Background gradient blobs */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -left-40 -top-40 h-96 w-96 rounded-full bg-blue-600/10 blur-3xl" />
-        <div className="absolute -right-40 top-1/3 h-64 w-64 rounded-full bg-blue-600/5 blur-3xl" />
-      </div>
-
       <div className="relative mx-auto max-w-6xl px-6 py-32">
-        <p className="mb-4 text-lg font-medium text-white">
-          Hey there, I&apos;m
+        <p className="mb-4 font-mono text-sm text-blue-400">
+          West Haven, CT
         </p>
         <h1 className="mb-4 text-5xl font-extrabold leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
           {personalInfo.name}
@@ -26,15 +20,15 @@ export default function Hero() {
         <div className="flex flex-wrap gap-4">
           <a
             href="#projects"
-            className="rounded-full bg-blue-600 px-8 py-3 font-semibold text-white transition-colors hover:bg-blue-500"
+            className="bg-blue-600 px-8 py-3 font-semibold text-white transition-colors hover:bg-blue-500"
           >
-            View My Work
+            See the work
           </a>
           <a
             href="#contact"
-            className="rounded-full border border-white/20 px-8 py-3 font-semibold text-white transition-colors hover:border-white/40 hover:bg-white/5"
+            className="border border-white/20 px-8 py-3 font-semibold text-white transition-colors hover:border-white/40 hover:bg-white/5"
           >
-            Get In Touch
+            Email me
           </a>
         </div>
 

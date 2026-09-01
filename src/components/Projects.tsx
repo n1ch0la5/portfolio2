@@ -5,7 +5,7 @@ function ProjectCard({ project }: { project: Project }) {
   return (
     <div
       key={project.title}
-      className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5"
+      className="group overflow-hidden border border-white/10 bg-white/5"
     >
       {project.image ? (
         <div className="relative h-48 overflow-hidden">
@@ -18,7 +18,7 @@ function ProjectCard({ project }: { project: Project }) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent" />
           {project.badge && (
-            <span className="absolute right-3 top-3 rounded-full bg-emerald-500/90 px-3 py-1 text-xs font-semibold text-white">
+            <span className="absolute right-3 top-3 bg-emerald-500/90 px-3 py-1 font-mono text-xs font-semibold text-white">
               {project.badge}
             </span>
           )}
@@ -74,7 +74,7 @@ function ProjectCard({ project }: { project: Project }) {
           {project.tech.map((t) => (
             <span
               key={t}
-              className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-gray-400"
+              className="border border-white/10 bg-white/5 px-2.5 py-1 font-mono text-xs text-gray-400"
             >
               {t}
             </span>

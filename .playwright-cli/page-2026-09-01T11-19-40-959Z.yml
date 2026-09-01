@@ -1,0 +1,330 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "NJ" [ref=e4] [cursor=pointer]:
+        - /url: "#"
+      - list [ref=e5]:
+        - listitem [ref=e6]:
+          - link "About" [ref=e7] [cursor=pointer]:
+            - /url: "#about"
+        - listitem [ref=e8]:
+          - link "Skills" [ref=e9] [cursor=pointer]:
+            - /url: "#skills"
+        - listitem [ref=e10]:
+          - link "Experience" [ref=e11] [cursor=pointer]:
+            - /url: "#experience"
+        - listitem [ref=e12]:
+          - link "Projects" [ref=e13] [cursor=pointer]:
+            - /url: "#projects"
+        - listitem [ref=e14]:
+          - link "Contact" [ref=e15] [cursor=pointer]:
+            - /url: "#contact"
+  - main [ref=e16]:
+    - generic [ref=e18]:
+      - paragraph [ref=e19]: West Haven, CT
+      - heading "Nick Johnson" [level=1] [ref=e20]
+      - heading "Full-Stack Engineer" [level=2] [ref=e21]
+      - paragraph [ref=e22]: I build clean, scalable, and high-performing web applications with deep expertise in Laravel, Vue, React, and Next.js.
+      - generic [ref=e23]:
+        - link "See the work" [ref=e24] [cursor=pointer]:
+          - /url: "#projects"
+        - link "Email me" [ref=e25] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=e26]:
+        - link "GitHub" [ref=e27] [cursor=pointer]:
+          - /url: https://github.com/n1ch0la5
+        - link "Email" [ref=e30] [cursor=pointer]:
+          - /url: mailto:nickjohnson.builds@gmail.com
+    - generic [ref=e34]:
+      - heading "About Me" [level=2] [ref=e35]
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - paragraph [ref=e38]: Full-Stack Engineer who builds web applications that developers actually want to use and businesses can depend on. I work primarily with Laravel, Vue, React, and Next.js, handling everything from backend APIs to interactive frontends.
+          - paragraph [ref=e39]: I'm a builder first. I solve problems, adapt quickly, and bring hands-on experience to the work. I'm most energized when working with teams that care about shipping solid code and aren't afraid to challenge the status quo.
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - paragraph [ref=e42]: Primary Stacks
+            - paragraph [ref=e43]: Laravel + Vue · React + Next.js
+          - generic [ref=e44]:
+            - paragraph [ref=e45]: Location
+            - paragraph [ref=e46]: West Haven, CT
+    - generic [ref=e48]:
+      - heading "Skills & Technologies" [level=2] [ref=e49]
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - heading "Frontend" [level=3] [ref=e52]
+          - generic [ref=e53]:
+            - generic [ref=e54]: Vue 2 / Vue 3
+            - generic [ref=e55]: React
+            - generic [ref=e56]: Next.js
+            - generic [ref=e57]: Nuxt.js
+            - generic [ref=e58]: TypeScript
+            - generic [ref=e59]: JavaScript
+            - generic [ref=e60]: Alpine.js
+            - generic [ref=e61]: Pinia
+            - generic [ref=e62]: HTML5
+            - generic [ref=e63]: CSS3
+            - generic [ref=e64]: SASS
+            - generic [ref=e65]: Tailwind CSS
+        - generic [ref=e66]:
+          - heading "Backend" [level=3] [ref=e67]
+          - generic [ref=e68]:
+            - generic [ref=e69]: Laravel
+            - generic [ref=e70]: Livewire
+            - generic [ref=e71]: Node.js
+            - generic [ref=e72]: REST APIs
+            - generic [ref=e73]: Supabase
+            - generic [ref=e74]: WordPress
+            - generic [ref=e75]: LEMP Stack
+        - generic [ref=e76]:
+          - heading "Database" [level=3] [ref=e77]
+          - generic [ref=e78]:
+            - generic [ref=e79]: MySQL
+            - generic [ref=e80]: PostgreSQL
+            - generic [ref=e81]: MSSQL
+        - generic [ref=e82]:
+          - heading "Tools & Practices" [level=3] [ref=e83]
+          - generic [ref=e84]:
+            - generic [ref=e85]: Git
+            - generic [ref=e86]: GitHub Actions
+            - generic [ref=e87]: Docker
+            - generic [ref=e88]: Jest
+            - generic [ref=e89]: Pest (PHP)
+            - generic [ref=e90]: Vite
+            - generic [ref=e91]: AWS
+            - generic [ref=e92]: Responsive Design
+    - generic [ref=e94]:
+      - heading "Experience" [level=2] [ref=e95]
+      - generic [ref=e98]:
+        - generic [ref=e101]:
+          - generic [ref=e102]:
+            - generic [ref=e103]:
+              - heading "Full-Stack Engineer" [level=3] [ref=e104]
+              - paragraph [ref=e105]:
+                - text: Cardinal Financial Co.
+                - generic [ref=e106]: · Remote
+            - generic [ref=e107]: June 2020 - Present
+          - list [ref=e108]:
+            - listitem [ref=e109]:
+              - generic [ref=e111]:
+                - text: Built and maintained multiple company-facing web applications on a
+                - strong [ref=e112]: Laravel
+                - text: backend with
+                - strong [ref=e113]: Vue.js
+                - text: frontends, handling everything from database schema design to API architecture to UI implementation.
+            - listitem [ref=e114]:
+              - generic [ref=e116]:
+                - text: Architected and developed an internal intranet platform from the ground up using
+                - strong [ref=e117]: Laravel
+                - text: and
+                - strong [ref=e118]: Alpine.js
+                - text: ", serving as the central hub for employee resources and tooling."
+            - listitem [ref=e119]:
+              - generic [ref=e121]:
+                - text: Built a real-time sales dialer desktop application for loan officers using
+                - strong [ref=e122]: Vite
+                - text: ","
+                - strong [ref=e123]: Vue 3
+                - text: ","
+                - strong [ref=e124]: TypeScript
+                - text: ", and"
+                - strong [ref=e125]: Pinia
+                - text: "- managing complex state across WebSocket connections and call workflows."
+            - listitem [ref=e126]:
+              - generic [ref=e128]:
+                - text: Developed an embeddable chat and form widget shipped as a
+                - strong [ref=e129]: JavaScript
+                - text: library using
+                - strong [ref=e130]: Vite
+                - text: "'s library mode and"
+                - strong [ref=e131]: Vue
+                - text: ", deployed via script tag across company websites."
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - generic [ref=e136]:
+              - heading "Contract Full-Stack Developer" [level=3] [ref=e137]
+              - paragraph [ref=e138]:
+                - text: Self-Employed
+                - generic [ref=e139]: · Remote
+            - generic [ref=e140]: October 2019 - May 2020
+          - list [ref=e141]:
+            - listitem [ref=e142]:
+              - generic [ref=e144]:
+                - text: Built a job application platform end-to-end using
+                - strong [ref=e145]: Laravel
+                - text: and
+                - strong [ref=e146]: Vue 3
+                - text: ", designing the database schema, REST API layer, and Composition API frontend from scratch."
+            - listitem [ref=e147]:
+              - generic [ref=e149]:
+                - text: Implemented server-side filtering, pagination, and role-based access control on the backend with a reactive, type-safe frontend in
+                - strong [ref=e150]: TypeScript
+                - text: .
+            - listitem [ref=e151]:
+              - generic [ref=e153]: Shipped a responsive, production-ready app with optimized queries, lazy-loaded components, and cross-device compatibility.
+        - generic [ref=e156]:
+          - generic [ref=e157]:
+            - generic [ref=e158]:
+              - heading "Lead Web Developer" [level=3] [ref=e159]
+              - paragraph [ref=e160]:
+                - text: Total Mortgage Services LLC
+                - generic [ref=e161]: · On-site
+            - generic [ref=e162]: September 2009 - October 2019
+          - list [ref=e163]:
+            - listitem [ref=e164]:
+              - generic [ref=e166]:
+                - text: Migrated TotalMortgage.com from a legacy stack to
+                - strong [ref=e167]: Laravel
+                - text: ","
+                - strong [ref=e168]: WordPress
+                - text: ", and"
+                - strong [ref=e169]: Vue.js
+                - text: "- rebuilding the frontend, restructuring the database, and improving page load times."
+            - listitem [ref=e170]:
+              - generic [ref=e172]: Led a team of 2 developers and a designer, owning technical decisions and code review while shipping features on a regular release cycle.
+            - listitem [ref=e173]:
+              - generic [ref=e175]:
+                - text: Co-built Embr, an internal marketing portal using
+                - strong [ref=e176]: Laravel
+                - text: and
+                - strong [ref=e177]: React
+                - text: ", handling campaign management, asset generation, and distribution workflows."
+    - generic [ref=e179]:
+      - heading "Featured Projects" [level=2] [ref=e180]
+      - generic [ref=e181]:
+        - generic [ref=e182]:
+          - img "TotalMortgage.com" [ref=e184]
+          - generic [ref=e186]:
+            - generic [ref=e187]:
+              - heading "TotalMortgage.com" [level=3] [ref=e188]
+              - link "Visit TotalMortgage.com" [ref=e189] [cursor=pointer]:
+                - /url: https://www.totalmortgage.com
+            - paragraph [ref=e192]: A full-scale company website rebuild and optimization, migrating legacy systems to a modern stack with improved performance, SEO, and user experience.
+            - generic [ref=e193]:
+              - generic [ref=e194]: Laravel
+              - generic [ref=e195]: Vue.js
+              - generic [ref=e196]: WordPress
+              - generic [ref=e197]: SASS
+        - generic [ref=e198]:
+          - img "Embr Marketing Portal" [ref=e200]
+          - generic [ref=e202]:
+            - heading "Embr Marketing Portal" [level=3] [ref=e204]
+            - paragraph [ref=e205]: A comprehensive marketing management platform for Total Mortgage, enabling teams to create, manage, and distribute marketing materials at scale.
+            - generic [ref=e206]:
+              - generic [ref=e207]: Laravel
+              - generic [ref=e208]: React
+              - generic [ref=e209]: MySQL
+              - generic [ref=e210]: REST API
+        - generic [ref=e211]:
+          - generic [ref=e212]:
+            - img "ClassFindr" [ref=e213]
+            - generic [ref=e215]: In Development
+          - generic [ref=e216]:
+            - generic [ref=e217]:
+              - heading "ClassFindr" [level=3] [ref=e218]
+              - link "Visit ClassFindr" [ref=e219] [cursor=pointer]:
+                - /url: https://www.classfindr.com
+            - paragraph [ref=e222]: An AI-powered marketplace connecting college students with available courses across institutions. Features transfer credit evaluation, course matching, and optimized graduation pathways to help students graduate cheaper and earlier.
+            - generic [ref=e223]:
+              - generic [ref=e224]: Vue.js
+              - generic [ref=e225]: TypeScript
+              - generic [ref=e226]: AI/ML
+              - generic [ref=e227]: Supabase
+        - generic [ref=e228]:
+          - img "Company Intranet Hub" [ref=e230]
+          - generic [ref=e232]:
+            - heading "Company Intranet Hub" [level=3] [ref=e234]
+            - paragraph [ref=e235]: A modern internal employee platform serving as the central hub for company resources, announcements, tools, and team collaboration.
+            - generic [ref=e236]:
+              - generic [ref=e237]: Laravel
+              - generic [ref=e238]: Alpine.js
+              - generic [ref=e239]: Tailwind CSS
+              - generic [ref=e240]: MySQL
+        - generic [ref=e241]:
+          - img "Sales Dialer App" [ref=e243]
+          - generic [ref=e245]:
+            - generic [ref=e246]:
+              - heading "Sales Dialer App" [level=3] [ref=e247]
+              - link "Visit Sales Dialer App" [ref=e248] [cursor=pointer]:
+                - /url: https://www.cardinalfinancial.com
+            - paragraph [ref=e251]: A desktop application built for loan officers to run their sales calling workflow. Features real-time call management, contact tracking, and performance analytics.
+            - generic [ref=e252]:
+              - generic [ref=e253]: Vue 3
+              - generic [ref=e254]: TypeScript
+              - generic [ref=e255]: Vite
+              - generic [ref=e256]: Pinia
+        - generic [ref=e263]:
+          - heading "Embeddable Chat Widget" [level=3] [ref=e265]
+          - paragraph [ref=e266]: A chat and lead-capture widget shipped as a standalone JavaScript library using Vite's library mode. Deployed via a single script tag across multiple company websites, with a Vue-powered UI that mounts into any host page without style conflicts.
+          - generic [ref=e267]:
+            - generic [ref=e268]: Vue
+            - generic [ref=e269]: Vite (Library Mode)
+            - generic [ref=e270]: TypeScript
+            - generic [ref=e271]: JavaScript
+      - generic [ref=e272]:
+        - generic [ref=e273]:
+          - heading "Just for Fun" [level=2] [ref=e274]
+          - paragraph [ref=e275]: Side projects I built for the love of it.
+        - generic [ref=e276]:
+          - generic [ref=e277]:
+            - img "Passtime" [ref=e279]
+            - generic [ref=e281]:
+              - generic [ref=e282]:
+                - heading "Passtime" [level=3] [ref=e283]
+                - link "Visit Passtime" [ref=e284] [cursor=pointer]:
+                  - /url: https://getpasstime.app
+              - paragraph [ref=e287]: An iOS app that transforms event tickets into shareable social media content. Scan movie, concert, or sports tickets with AI-powered recognition, customize with official artwork, and build a personal entertainment timeline.
+              - generic [ref=e288]:
+                - generic [ref=e289]: iOS
+                - generic [ref=e290]: Swift
+                - generic [ref=e291]: Supabase
+                - generic [ref=e292]: AI/Camera
+          - generic [ref=e293]:
+            - img "Artemis 2 Mission" [ref=e295]
+            - generic [ref=e297]:
+              - generic [ref=e298]:
+                - heading "Artemis 2 Mission" [level=3] [ref=e299]
+                - link "Visit Artemis 2 Mission" [ref=e300] [cursor=pointer]:
+                  - /url: https://artemis2mission.live
+              - paragraph [ref=e303]: A real-time mission dashboard built for NASA's Artemis 2 lunar flyby. Featured live viewer counts, floating emoji reactions, and a synchronized "chill beats" button so everyone watching listened to the same song at the same moment.
+              - generic [ref=e304]:
+                - generic [ref=e305]: Next.js
+                - generic [ref=e306]: Supabase Realtime
+                - generic [ref=e307]: WebSockets
+                - generic [ref=e308]: Tailwind CSS
+          - generic [ref=e309]:
+            - img "Movie Night Games" [ref=e311]
+            - generic [ref=e313]:
+              - generic [ref=e314]:
+                - heading "Movie Night Games" [level=3] [ref=e315]
+                - link "Visit Movie Night Games" [ref=e316] [cursor=pointer]:
+                  - /url: https://movienight.games
+              - paragraph [ref=e319]: A daily games site for movie buffs. ROLES is a Wheel of Fortune-style game where you guess the actor and the character they played. THUMBS challenges you to guess whether Siskel & Ebert gave a film a thumbs up or down.
+              - generic [ref=e320]:
+                - generic [ref=e321]: Next.js
+                - generic [ref=e322]: TypeScript
+                - generic [ref=e323]: Supabase
+                - generic [ref=e324]: Tailwind CSS
+    - generic [ref=e328]:
+      - heading "Get in touch" [level=2] [ref=e329]
+      - paragraph [ref=e330]: I'm open to full-time roles, contract work, and interesting projects. Email is the fastest way to reach me.
+      - link "Email me" [ref=e331] [cursor=pointer]:
+        - /url: mailto:nickjohnson.builds@gmail.com
+      - generic [ref=e332]:
+        - link "nickjohnson.builds@gmail.com" [ref=e333] [cursor=pointer]:
+          - /url: mailto:nickjohnson.builds@gmail.com
+        - generic [ref=e334]: ·
+        - link "203-500-0996" [ref=e335] [cursor=pointer]:
+          - /url: tel:203-500-0996
+        - generic [ref=e336]: ·
+        - link "GitHub" [ref=e337] [cursor=pointer]:
+          - /url: https://github.com/n1ch0la5
+  - contentinfo [ref=e338]:
+    - generic [ref=e339]:
+      - paragraph [ref=e340]: © 2026 Nick Johnson
+      - generic [ref=e341]:
+        - link "GitHub" [ref=e342] [cursor=pointer]:
+          - /url: https://github.com/n1ch0la5
+        - link "Email" [ref=e343] [cursor=pointer]:
+          - /url: mailto:nickjohnson.builds@gmail.com
+  - alert [ref=e344]

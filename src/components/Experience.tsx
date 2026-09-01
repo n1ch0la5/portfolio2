@@ -1,5 +1,20 @@
 import { experience } from "@/data/resume";
 
+// Longest names first so "Vue 3" / "Vue.js" win over "Vue"
+const TECH_TERMS = /(\bAlpine\.js\b|\bJavaScript\b|\bTypeScript\b|\bWordPress\b|\bLaravel\b|\bVue\.js\b|\bVue 3\b|\bReact\b|\bPinia\b|\bVite\b|\bVue\b)/;
+
+function highlightTech(text: string) {
+  return text.split(TECH_TERMS).map((part, i) =>
+    TECH_TERMS.test(part) ? (
+      <strong key={i} className="font-semibold text-gray-200">
+        {part}
+      </strong>
+    ) : (
+      part
+    )
+  );
+}
+
 export default function Experience() {
   return (
     <section id="experience" className="py-24">
@@ -18,7 +33,7 @@ Experience
                 {/* Timeline dot */}
                 <div className="absolute left-6 top-2 hidden h-5 w-5 rounded-full border-4 border-gray-950 bg-blue-500 md:block" />
 
-                <div className="rounded-2xl border border-white/10 bg-white/5 p-8">
+                <div className="border border-white/10 bg-white/5 p-8">
                   <div className="mb-4 flex flex-wrap items-start justify-between gap-2">
                     <div>
                       <h3 className="text-xl font-bold text-white">
@@ -29,7 +44,7 @@ Experience
                         <span className="text-gray-600">· {job.type}</span>
                       </p>
                     </div>
-                    <span className="rounded-full bg-blue-500/10 px-4 py-1 text-sm font-medium text-blue-400">
+                    <span className="bg-blue-500/10 px-4 py-1 font-mono text-xs text-blue-400">
                       {job.period}
                     </span>
                   </div>
@@ -40,7 +55,7 @@ Experience
                         className="flex gap-3 text-gray-400"
                       >
                         <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gray-600" />
-                        {bullet}
+                        <span>{highlightTech(bullet)}</span>
                       </li>
                     ))}
                   </ul>
