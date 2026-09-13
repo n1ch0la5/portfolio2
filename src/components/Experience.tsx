@@ -1,7 +1,7 @@
 import { experience } from "@/data/resume";
 
 // Longest names first so "Vue 3" / "Vue.js" win over "Vue"
-const TECH_TERMS = /(\bAlpine\.js\b|\bJavaScript\b|\bTypeScript\b|\bWordPress\b|\bLaravel\b|\bVue\.js\b|\bVue 3\b|\bReact\b|\bPinia\b|\bVite\b|\bVue\b)/;
+const TECH_TERMS = /(\bNext\.js\b|\bPostgreSQL\b|\bMySQL\b|\bAlpine\.js\b|\bJavaScript\b|\bTypeScript\b|\bWordPress\b|\bLaravel\b|\bVue\.js\b|\bVue 3\b|\bReact\b|\bPinia\b|\bVite\b|\bVue\b)/;
 
 function highlightTech(text: string) {
   return text.split(TECH_TERMS).map((part, i) =>

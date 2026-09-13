@@ -104,6 +104,7 @@ export const experience: Experience[] = [
     period: "June 2020 - Present",
     bullets: [
       "Built and maintained multiple company-facing web applications on a Laravel backend with Vue.js frontends, handling everything from database schema design to API architecture to UI implementation.",
+      "Migrated the company's WordPress marketing sites to Next.js and their data from MySQL to PostgreSQL, including sebonic.com (live) and cardinalfinancial.com (in progress).",
       "Architected and developed an internal intranet platform from the ground up using Laravel and Alpine.js, serving as the central hub for employee resources and tooling.",
       "Built a real-time sales dialer desktop application for loan officers using Vite, Vue 3, TypeScript, and Pinia - managing complex state across WebSocket connections and call workflows.",
       "Developed an embeddable chat and form widget shipped as a JavaScript library using Vite's library mode and Vue, deployed via script tag across company websites.",
