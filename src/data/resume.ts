@@ -6,6 +6,7 @@ export const personalInfo = {
   phone: "203-500-0996",
   website: "https://nicksjohnson.com",
   github: "https://github.com/n1ch0la5",
+  linkedin: "https://www.linkedin.com/in/nick-johnson-a5418914/",
   tagline:
     "I build clean, scalable, and high-performing web applications with deep expertise in Laravel, Vue, React, and Next.js.",
 };
@@ -101,7 +102,7 @@ export const experience: Experience[] = [
     title: "Full-Stack Engineer",
     company: "Cardinal Financial Co.",
     type: "Remote",
-    period: "June 2020 - Present",
+    period: "June 2020 - August 2026",
     bullets: [
       "Built and maintained multiple company-facing web applications on a Laravel backend with Vue.js frontends, handling everything from database schema design to API architecture to UI implementation.",
       "Migrated the company's WordPress marketing sites to Next.js and their data from MySQL to PostgreSQL, including sebonic.com (live) and cardinalfinancial.com (in progress).",

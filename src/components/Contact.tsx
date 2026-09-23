@@ -44,6 +44,15 @@ Get in touch
               >
                 GitHub
               </a>
+              <span className="hidden sm:inline">·</span>
+              <a
+                href={personalInfo.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-blue-400"
+              >
+                LinkedIn
+              </a>
             </div>
           </div>
         </div>

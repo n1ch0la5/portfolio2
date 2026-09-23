@@ -15,6 +15,14 @@ export default function Footer() {
             GitHub
           </a>
           <a
+            href="https://www.linkedin.com/in/nick-johnson-a5418914/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-gray-600 transition-colors hover:text-blue-400"
+          >
+            LinkedIn
+          </a>
+          <a
             href="mailto:nickjohnson.builds@gmail.com"
             className="text-sm text-gray-600 transition-colors hover:text-blue-400"
           >
