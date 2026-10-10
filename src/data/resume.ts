@@ -41,6 +41,7 @@ export const skills: SkillCategory[] = [
       { name: "React" },
       { name: "Next.js" },
       { name: "Nuxt.js" },
+      { name: "React Native (Expo)" },
       { name: "TypeScript" },
       { name: "JavaScript" },
       { name: "Alpine.js" },
@@ -55,10 +56,12 @@ export const skills: SkillCategory[] = [
     category: "Backend",
     color: "from-cyan-500 to-blue-500",
     skills: [
+      { name: "PHP" },
       { name: "Laravel" },
       { name: "Livewire" },
-      { name: "Node.js" },
       { name: "REST APIs" },
+      { name: "Queues & Background Jobs" },
+      { name: "Node.js" },
       { name: "Supabase" },
       { name: "WordPress" },
       { name: "LEMP Stack" },
@@ -71,20 +74,53 @@ export const skills: SkillCategory[] = [
       { name: "MySQL" },
       { name: "PostgreSQL" },
       { name: "MSSQL" },
+      { name: "Redis" },
     ],
   },
   {
-    category: "Tools & Practices",
+    category: "Testing",
+    color: "from-lime-500 to-emerald-500",
+    skills: [
+      { name: "PHPUnit" },
+      { name: "Vitest" },
+      { name: "Playwright" },
+    ],
+  },
+  {
+    category: "Infrastructure & Tools",
     color: "from-orange-500 to-rose-500",
     skills: [
-      { name: "Git" },
-      { name: "GitHub Actions" },
+      { name: "Linux" },
+      { name: "Nginx" },
+      { name: "Apache" },
       { name: "Docker" },
-      { name: "Jest" },
-      { name: "Pest (PHP)" },
+      { name: "CI/CD" },
+      { name: "Git" },
       { name: "Vite" },
       { name: "AWS" },
-      { name: "Responsive Design" },
+    ],
+  },
+  {
+    category: "Auth",
+    color: "from-slate-500 to-gray-500",
+    skills: [
+      { name: "SAML" },
+      { name: "OpenID Connect" },
+      { name: "OAuth" },
+      { name: "LDAP" },
+    ],
+  },
+  {
+    category: "AI",
+    color: "from-violet-500 to-fuchsia-500",
+    skills: [
+      { name: "Claude Code" },
+      { name: "Codex" },
+      { name: "Cursor" },
+      { name: "OpenAI API" },
+      { name: "Anthropic API" },
+      { name: "Tool Calling" },
+      { name: "Structured Output" },
     ],
   },
 ];
@@ -104,11 +140,15 @@ export const experience: Experience[] = [
     type: "Remote",
     period: "June 2020 - August 2026",
     bullets: [
-      "Built and maintained multiple company-facing web applications on a Laravel backend with Vue.js frontends, handling everything from database schema design to API architecture to UI implementation.",
-      "Migrated the company's WordPress marketing sites to Next.js and their data from MySQL to PostgreSQL, including sebonic.com (live) and cardinalfinancial.com (in progress).",
-      "Architected and developed an internal intranet platform from the ground up using Laravel and Alpine.js, serving as the central hub for employee resources and tooling.",
-      "Built a real-time sales dialer desktop application for loan officers using Vite, Vue 3, TypeScript, and Pinia - managing complex state across WebSocket connections and call workflows.",
-      "Developed an embeddable chat and form widget shipped as a JavaScript library using Vite's library mode and Vue, deployed via script tag across company websites.",
+      "Migrated the company's WordPress marketing sites to Next.js and their data from MySQL to PostgreSQL, including sebonic.com (live) and cardinalfinancial.com (in progress at my departure).",
+      "Maintained and extended the company's existing WordPress web properties, covering theme and plugin development, MySQL schema and query work, and REST API integrations.",
+      "Contributed backend and frontend development to a multi-year internal platform build in Laravel and Alpine.js, serving as the central hub for employee resources and tooling.",
+      "Built a sales dialer for loan officers with two other developers using Vite, Vue 3, TypeScript, and Pinia, managing state across WebSocket connections and call workflows.",
+      "Built an embeddable chat and lead-capture widget on my own with Vue and Vite's library mode (Rollup), shipped as a JavaScript library and deployed via a script tag.",
+      "Used Claude Code, Codex, and previously Cursor daily in production codebases, reviewing every change before it shipped and owning the result in production.",
+      "Integrated OpenAI and Anthropic APIs into application features, using tool calling, structured JSON output, and vision-based document understanding.",
+      "Wrote automated tests across the stack, using PHPUnit for backend code and Vitest and Playwright for frontend and end-to-end coverage.",
+      "Worked in Docker across local development and production, shipping through a CI/CD pipeline on a regular release cycle.",
     ],
   },
   {
@@ -128,9 +168,11 @@ export const experience: Experience[] = [
     type: "On-site",
     period: "September 2009 - October 2019",
     bullets: [
-      "Migrated TotalMortgage.com from a legacy stack to Laravel, WordPress, and Vue.js - rebuilding the frontend, restructuring the database, and improving page load times.",
-      "Led a team of 2 developers and a designer, owning technical decisions and code review while shipping features on a regular release cycle.",
+      "Rebuilt TotalMortgage.com on Laravel and Vue.js, replacing a legacy stack, restructuring the database, and improving page load times.",
+      "Led a team of 2 developers and a designer, owning architecture, technical decisions, and code review while shipping features on a regular release cycle.",
+      "Administered the Linux application environment behind production web properties, covering Nginx and Apache configuration, PHP services, scheduled jobs, background queues, and application logging, and diagnosed production issues across the stack.",
       "Co-built Embr, an internal marketing portal using Laravel and React, handling campaign management, asset generation, and distribution workflows.",
+      "Built and integrated authentication, including enterprise single sign-on (SAML, OpenID Connect, LDAP) and OAuth-based third-party providers.",
     ],
   },
 ];
@@ -150,8 +192,8 @@ export const projects: Project[] = [
   {
     title: "TotalMortgage.com",
     description:
-      "A full-scale company website rebuild and optimization, migrating legacy systems to a modern stack with improved performance, SEO, and user experience.",
-    tech: ["Laravel", "Vue.js", "WordPress", "SASS"],
+      "A full company website rebuild on Laravel and Vue.js, replacing a legacy stack with improved performance, SEO, and user experience.",
+    tech: ["Laravel", "Vue.js", "SASS"],
     gradient: "from-pink-600 to-rose-600",
     link: "https://www.totalmortgage.com",
     image: "/images/tms.png",
@@ -167,8 +209,8 @@ export const projects: Project[] = [
   {
     title: "ClassFindr",
     description:
-      "An AI-powered marketplace connecting college students with available courses across institutions. Features transfer credit evaluation, course matching, and optimized graduation pathways to help students graduate cheaper and earlier.",
-    tech: ["Vue.js", "TypeScript", "AI/ML", "Supabase"],
+      "An AI-powered marketplace connecting college students with available courses across institutions, including a prerequisite-aware course sequencer that handles multi-level chains, cross-institution prerequisites, and cycles in catalog data, plus LLM tool calling and structured output for transfer credit evaluation.",
+    tech: ["Nuxt", "TypeScript", "GraphQL", "Prisma", "PostgreSQL", "OpenAI/Anthropic APIs"],
     gradient: "from-emerald-500 to-green-600",
     link: "https://www.classfindr.com",
     image: "/images/classfindr.png",
@@ -177,7 +219,7 @@ export const projects: Project[] = [
   {
     title: "Company Intranet Hub",
     description:
-      "A modern internal employee platform serving as the central hub for company resources, announcements, tools, and team collaboration.",
+      "A multi-year internal platform serving as the central hub for employee resources and tooling, built in Laravel and Alpine.js. I contributed backend and frontend development as part of the team.",
     tech: ["Laravel", "Alpine.js", "Tailwind CSS", "MySQL"],
     gradient: "from-cyan-600 to-blue-600",
     image: "/images/thehub.png",
@@ -203,6 +245,15 @@ export const projects: Project[] = [
 
 export const sideProjects: Project[] = [
   {
+    title: "Podwobble",
+    description:
+      "A Mac and Windows app that turns a podcast episode or any audio into social video, with a waveform that reacts to whoever is speaking, local Whisper captions, and one render that exports 9:16, 16:9, 1:1 and 4:5 at once. Runs fully offline, with bundled FFmpeg and a sandboxed Mac App Store build.",
+    tech: ["Tauri", "Rust", "TypeScript", "Canvas", "FFmpeg", "Whisper"],
+    gradient: "from-sky-500 to-indigo-600",
+    link: "https://podwobble.com",
+    image: "/images/podwobble.png",
+  },
+  {
     title: "Passtime",
     description:
       "An iOS app that transforms event tickets into shareable social media content. Scan movie, concert, or sports tickets with AI-powered recognition, customize with official artwork, and build a personal entertainment timeline.",
@@ -219,15 +270,6 @@ export const sideProjects: Project[] = [
     gradient: "from-indigo-600 to-blue-800",
     link: "https://artemis2mission.live",
     image: "/images/artemis2mission.png",
-  },
-  {
-    title: "Movie Night Games",
-    description:
-      "A daily games site for movie buffs. ROLES is a Wheel of Fortune-style game where you guess the actor and the character they played. THUMBS challenges you to guess whether Siskel & Ebert gave a film a thumbs up or down.",
-    tech: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS"],
-    gradient: "from-red-600 to-rose-700",
-    link: "https://movienight.games",
-    image: "/images/movienight.png",
   },
 ];
 
