@@ -1,12 +1,12 @@
+"use client";
+
 import Image from "next/image";
-import { projects, sideProjects, type Project } from "@/data/resume";
+import { type Project } from "@/data/resume";
+import { useProfile } from "@/lib/variant";
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <div
-      key={project.title}
-      className="group overflow-hidden border border-white/10 bg-white/5"
-    >
+    <div className="group overflow-hidden border border-white/10 bg-white/5">
       {project.image ? (
         <div className="relative h-48 overflow-hidden">
           <Image
@@ -86,6 +86,8 @@ function ProjectCard({ project }: { project: Project }) {
 }
 
 export default function Projects() {
+  const { featured, fun } = useProfile();
+
   return (
     <section id="projects" className="py-24">
       <div className="mx-auto max-w-6xl px-6">
@@ -94,27 +96,27 @@ export default function Projects() {
         </h2>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project) => (
+          {featured.map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}
         </div>
 
-        <div className="mt-20">
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold sm:text-4xl">
-              Just for Fun
-            </h2>
-            <p className="mt-3 text-gray-400">
-              Side projects I built for the love of it.
-            </p>
-          </div>
+        {fun.length > 0 && (
+          <div className="mt-20">
+            <div className="mb-12">
+              <h2 className="text-3xl font-bold sm:text-4xl">Just for Fun</h2>
+              <p className="mt-3 text-gray-400">
+                Side projects I built for the love of it.
+              </p>
+            </div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {sideProjects.map((project) => (
-              <ProjectCard key={project.title} project={project} />
-            ))}
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+              {fun.map((project) => (
+                <ProjectCard key={project.title} project={project} />
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );

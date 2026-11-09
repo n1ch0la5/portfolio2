@@ -1,126 +1,89 @@
 export const personalInfo = {
   name: "Nick Johnson",
-  title: "Full-Stack Engineer",
+  title: "Senior Full-Stack Engineer",
+  focus: "Laravel / Vue / Next.js / AI",
   location: "West Haven, CT",
+  status: "Open to work",
+  headshot: "/images/headshot.jpg",
   email: "nickjohnson.builds@gmail.com",
   phone: "203-500-0996",
   website: "https://nicksjohnson.com",
   github: "https://github.com/n1ch0la5",
   linkedin: "https://www.linkedin.com/in/nick-johnson-a5418914/",
+  headline:
+    "I build web applications end to end, from the Laravel API to the Vue or React frontend.",
   tagline:
-    "I build clean, scalable, and high-performing web applications with deep expertise in Laravel, Vue, React, and Next.js.",
+    "Full-stack engineer with 17 years shipping web applications in Laravel, Vue, React, and Next.js.",
+  contact:
+    "I'm open to full-time roles, contract work, and interesting projects. Email is the fastest way to reach me.",
 };
 
 export const about = {
   summary: [
-    "Full-Stack Engineer who builds web applications that developers actually want to use and businesses can depend on. I work primarily with Laravel, Vue, React, and Next.js, handling everything from backend APIs to interactive frontends.",
-    "I'm a builder first. I solve problems, adapt quickly, and bring hands-on experience to the work. I'm most energized when working with teams that care about shipping solid code and aren't afraid to challenge the status quo.",
-  ],
-  highlights: [
-    { label: "Primary Stacks", value: "Laravel + Vue · React + Next.js" },
-    { label: "Location", value: "West Haven, CT" },
+    "Seventeen years building web applications that developers want to work in and businesses can depend on, most of them for mortgage lenders. I work in Laravel and Vue, and in React and Next.js, and handle everything from the database and API to the interactive frontend.",
+    "I'm a builder first. I use Claude Code and Codex daily in production code and own what ships. I'm most energized by teams that care about solid code and aren't afraid to challenge the status quo.",
   ],
 };
 
-export interface Skill {
-  name: string;
-}
-
 export interface SkillCategory {
   category: string;
-  color: string;
-  skills: Skill[];
+  skills: string[];
 }
 
 export const skills: SkillCategory[] = [
   {
     category: "Frontend",
-    color: "from-blue-500 to-sky-400",
     skills: [
-      { name: "Vue 2 / Vue 3" },
-      { name: "React" },
-      { name: "Next.js" },
-      { name: "Nuxt.js" },
-      { name: "React Native (Expo)" },
-      { name: "TypeScript" },
-      { name: "JavaScript" },
-      { name: "Alpine.js" },
-      { name: "Pinia" },
-      { name: "HTML5" },
-      { name: "CSS3" },
-      { name: "SASS" },
-      { name: "Tailwind CSS" },
+      "Vue 2 / Vue 3",
+      "React",
+      "Next.js",
+      "Nuxt.js",
+      "React Native (Expo)",
+      "TypeScript",
+      "Alpine.js",
+      "Tailwind CSS",
+      "SASS",
+      "Vite",
     ],
   },
   {
     category: "Backend",
-    color: "from-cyan-500 to-blue-500",
     skills: [
-      { name: "PHP" },
-      { name: "Laravel" },
-      { name: "Livewire" },
-      { name: "REST APIs" },
-      { name: "Queues & Background Jobs" },
-      { name: "Node.js" },
-      { name: "Supabase" },
-      { name: "WordPress" },
-      { name: "LEMP Stack" },
+      "PHP",
+      "Laravel",
+      "Livewire",
+      "REST APIs",
+      "Queues & Background Jobs",
+      "Node.js",
+      "Supabase",
+      "WordPress",
     ],
   },
   {
-    category: "Database",
-    color: "from-emerald-500 to-teal-500",
-    skills: [
-      { name: "MySQL" },
-      { name: "PostgreSQL" },
-      { name: "MSSQL" },
-      { name: "Redis" },
-    ],
+    category: "Data",
+    skills: ["MySQL", "PostgreSQL", "MSSQL", "Redis"],
   },
   {
     category: "Testing",
-    color: "from-lime-500 to-emerald-500",
-    skills: [
-      { name: "PHPUnit" },
-      { name: "Vitest" },
-      { name: "Playwright" },
-    ],
+    skills: ["PHPUnit", "Vitest", "Playwright"],
   },
   {
-    category: "Infrastructure & Tools",
-    color: "from-orange-500 to-rose-500",
-    skills: [
-      { name: "Linux" },
-      { name: "Nginx" },
-      { name: "Apache" },
-      { name: "Docker" },
-      { name: "CI/CD" },
-      { name: "Git" },
-      { name: "Vite" },
-      { name: "AWS" },
-    ],
+    category: "Infrastructure",
+    skills: ["Linux", "Nginx", "Docker", "CI/CD", "AWS"],
   },
   {
     category: "Auth",
-    color: "from-slate-500 to-gray-500",
-    skills: [
-      { name: "SAML" },
-      { name: "OpenID Connect" },
-      { name: "OAuth" },
-      { name: "LDAP" },
-    ],
+    skills: ["SAML", "OpenID Connect", "OAuth", "LDAP"],
   },
   {
     category: "AI",
-    color: "from-violet-500 to-fuchsia-500",
     skills: [
-      { name: "Claude Code" },
-      { name: "Codex" },
-      { name: "Cursor" },
-      { name: "OpenAI API" },
-      { name: "Anthropic API" },
-      { name: "Tool Calling" },
-      { name: "Structured Output" },
+      "Claude Code",
+      "Codex",
+      "Anthropic API",
+      "OpenAI API",
+      "Tool Calling",
+      "Structured Output",
     ],
   },
 ];
@@ -128,52 +91,50 @@ export const skills: SkillCategory[] = [
 export interface Experience {
   title: string;
   company: string;
-  type: string;
+  location: string;
   period: string;
-  bullets: string[];
+  summary: string;
+  tools: string[];
 }
 
 export const experience: Experience[] = [
   {
     title: "Full-Stack Engineer",
-    company: "Cardinal Financial Co.",
-    type: "Remote",
-    period: "June 2020 - August 2026",
-    bullets: [
-      "Migrated the company's WordPress marketing sites to Next.js and their data from MySQL to PostgreSQL, including sebonic.com (live) and cardinalfinancial.com (in progress at my departure).",
-      "Maintained and extended the company's existing WordPress web properties, covering theme and plugin development, MySQL schema and query work, and REST API integrations.",
-      "Contributed backend and frontend development to a multi-year internal platform build in Laravel and Alpine.js, serving as the central hub for employee resources and tooling.",
-      "Built a sales dialer for loan officers with two other developers using Vite, Vue 3, TypeScript, and Pinia, managing state across WebSocket connections and call workflows.",
-      "Built an embeddable chat and lead-capture widget on my own with Vue and Vite's library mode (Rollup), shipped as a JavaScript library and deployed via a script tag.",
-      "Used Claude Code, Codex, and previously Cursor daily in production codebases, reviewing every change before it shipped and owning the result in production.",
-      "Integrated OpenAI and Anthropic APIs into application features, using tool calling, structured JSON output, and vision-based document understanding.",
-      "Wrote automated tests across the stack, using PHPUnit for backend code and Vitest and Playwright for frontend and end-to-end coverage.",
-      "Worked in Docker across local development and production, shipping through a CI/CD pipeline on a regular release cycle.",
+    company: "Cardinal Financial",
+    location: "Remote",
+    period: "2020 – 2026",
+    summary:
+      "Six years on the web team at a nationwide mortgage lender. Migrated the marketing sites from WordPress to Next.js and PostgreSQL (sebonic.com live, cardinalfinancial.com in progress when I left), built a Vue 3 sales dialer for loan officers with two other developers, and shipped an embeddable chat widget on my own. Helped set the team's standards for AI coding agents, writing shared Claude Code skills and CLAUDE.md rules, and used Claude Code and Codex daily in production code with tests across PHPUnit, Pest, Vitest, and Playwright.",
+    tools: [
+      "Next.js",
+      "WordPress",
+      "Laravel",
+      "Alpine.js",
+      "Vue 3",
+      "TypeScript",
+      "PostgreSQL",
+      "MySQL",
+      "Docker",
+      "Anthropic & OpenAI APIs",
     ],
   },
   {
     title: "Contract Full-Stack Developer",
     company: "Self-Employed",
-    type: "Remote",
-    period: "October 2019 - May 2020",
-    bullets: [
-      "Built a job application platform end-to-end using Laravel and Vue 3, designing the database schema, REST API layer, and Composition API frontend from scratch.",
-      "Implemented server-side filtering, pagination, and role-based access control on the backend with a reactive, type-safe frontend in TypeScript.",
-      "Shipped a responsive, production-ready app with optimized queries, lazy-loaded components, and cross-device compatibility.",
-    ],
+    location: "Remote",
+    period: "2019 – 2020",
+    summary:
+      "Built a job application platform end to end in Laravel and Vue 3: database schema, REST API, role-based access, server-side filtering and pagination, and a TypeScript frontend.",
+    tools: ["Laravel", "Vue 3", "TypeScript", "MySQL"],
   },
   {
     title: "Lead Web Developer",
-    company: "Total Mortgage Services LLC",
-    type: "On-site",
-    period: "September 2009 - October 2019",
-    bullets: [
-      "Rebuilt TotalMortgage.com on Laravel and Vue.js, replacing a legacy stack, restructuring the database, and improving page load times.",
-      "Led a team of 2 developers and a designer, owning architecture, technical decisions, and code review while shipping features on a regular release cycle.",
-      "Administered the Linux application environment behind production web properties, covering Nginx and Apache configuration, PHP services, scheduled jobs, background queues, and application logging, and diagnosed production issues across the stack.",
-      "Co-built Embr, an internal marketing portal using Laravel and React, handling campaign management, asset generation, and distribution workflows.",
-      "Built and integrated authentication, including enterprise single sign-on (SAML, OpenID Connect, LDAP) and OAuth-based third-party providers.",
-    ],
+    company: "Total Mortgage Services",
+    location: "Milford, CT",
+    period: "2009 – 2019",
+    summary:
+      "Ten years running web for a mortgage lender. Led the modernization of TotalMortgage.com from ASP Classic to Laravel and Vue, and co-built Embr, the internal marketing portal. Led two developers and a designer, owned architecture and code review, and administered the Linux production environment, including enterprise single sign-on with SAML, OpenID Connect, and LDAP.",
+    tools: ["Laravel", "Vue.js", "React", "MySQL", "Linux", "Nginx", "SAML / OIDC / LDAP"],
   },
 ];
 
@@ -201,7 +162,7 @@ export const projects: Project[] = [
   {
     title: "Embr Marketing Portal",
     description:
-      "A comprehensive marketing management platform for Total Mortgage, enabling teams to create, manage, and distribute marketing materials at scale.",
+      "A marketing management platform for Total Mortgage, enabling teams to create, manage, and distribute marketing materials at scale.",
     tech: ["Laravel", "React", "MySQL", "REST API"],
     gradient: "from-orange-600 to-rose-600",
     image: "/images/embr.png",
@@ -209,7 +170,7 @@ export const projects: Project[] = [
   {
     title: "ClassFindr",
     description:
-      "An AI-powered marketplace connecting college students with available courses across institutions, including a prerequisite-aware course sequencer that handles multi-level chains, cross-institution prerequisites, and cycles in catalog data, plus LLM tool calling and structured output for transfer credit evaluation.",
+      "An AI-powered marketplace connecting college students with available courses across institutions. Includes a prerequisite-aware course sequencer and LLM-based transfer credit evaluation using tool calling and structured output.",
     tech: ["Nuxt", "TypeScript", "GraphQL", "Prisma", "PostgreSQL", "OpenAI/Anthropic APIs"],
     gradient: "from-emerald-500 to-green-600",
     link: "https://www.classfindr.com",
@@ -227,10 +188,9 @@ export const projects: Project[] = [
   {
     title: "Sales Dialer App",
     description:
-      "A desktop application built for loan officers to run their sales calling workflow. Features real-time call management, contact tracking, and performance analytics.",
+      "A desktop application built for loan officers to run their sales calling workflow, built with two other developers. Real-time call management over WebSockets, contact tracking, and performance analytics.",
     tech: ["Vue 3", "TypeScript", "Vite", "Pinia"],
     gradient: "from-blue-600 to-indigo-600",
-    link: "https://www.cardinalfinancial.com",
     image: "/images/salesdialer.png",
   },
   {

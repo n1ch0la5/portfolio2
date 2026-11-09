@@ -3,10 +3,9 @@
 import { useState } from "react";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
+  { label: "Experience", href: "#experience" },
+  { label: "Skills", href: "#skills" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -16,10 +15,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-gray-950/80 backdrop-blur-md">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a
-          href="#"
-          className="font-mono text-xl font-bold text-blue-400"
-        >
+        <a href="#" className="font-mono text-xl font-bold text-blue-400">
           NJ
         </a>
 

@@ -1,17 +1,21 @@
+"use client";
+
 import { personalInfo } from "@/data/resume";
+import { useProfile } from "@/lib/variant";
 
 export default function Contact() {
+  const { contact } = useProfile();
+
   return (
     <section id="contact" className="py-24">
       <div className="mx-auto max-w-6xl px-6">
         <div className="relative overflow-hidden border border-white/10 bg-white/5 p-12 text-center sm:p-16">
           <div className="relative">
             <h2 className="mb-4 text-3xl font-bold sm:text-4xl">
-Get in touch
+              Get in touch
             </h2>
             <p className="mx-auto mb-10 max-w-lg text-lg text-gray-400">
-              I&apos;m open to full-time roles, contract work, and interesting
-              projects. Email is the fastest way to reach me.
+              {contact}
             </p>
 
             <a
