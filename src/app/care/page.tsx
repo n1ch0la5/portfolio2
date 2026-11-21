@@ -68,13 +68,13 @@ const plans = [
 export const metadata: Metadata = {
   title: "Site Care | Nick Johnson",
   description:
-    "I keep small websites fast, updated and earning. A one-time fix-up, simple monthly care, or a growth plan where I share only in the money I add.",
+    "I keep websites fast, updated and earning, from blogs and shops to classifieds and community sites. A one-time fix-up, monthly care, or a growth plan where I share only in the money I add.",
   robots: { index: false, follow: false, nocache: true },
   alternates: { canonical: null },
   openGraph: {
     title: "Site Care | Nick Johnson",
     description:
-      "I keep small websites fast, updated and earning. A one-time fix-up, simple monthly care, or a growth plan where I share only in the money I add.",
+      "I keep websites fast, updated and earning, from blogs and shops to classifieds and community sites. A one-time fix-up, monthly care, or a growth plan where I share only in the money I add.",
     url: "https://nicksjohnson.com/care",
     type: "website",
   },
@@ -128,7 +128,7 @@ const faqs = [
   },
   {
     q: "What kinds of sites?",
-    a: "Blogs, hobby and reference sites, small shops and small business sites. WordPress, static sites, Next.js, Laravel and Shopify themes.",
+    a: "Blogs and reference sites, online shops, directories, classifieds, marketplaces, community and membership sites, and business sites. WordPress, Laravel, Next.js, static sites and Shopify themes. Bigger or custom-built sites get a quote after the checkup.",
   },
   {
     q: "Is there a contract?",
@@ -153,13 +153,13 @@ export default function CarePage() {
               Website maintenance and monetization
             </p>
             <h1 className="mb-6 max-w-3xl text-4xl font-bold leading-tight sm:text-5xl">
-              I keep small websites running, fast, and earning.
+              I keep websites running, fast, and earning.
             </h1>
             <p className="mb-10 max-w-2xl text-lg text-gray-400">
-              For people who own a blog, a hobby site or a small shop and would
-              rather not babysit it. Start with a one-time fix-up, keep it
-              running for a flat monthly fee, or let me grow it and share only
-              in the money I add.
+              For owners who'd rather run the business than the website: blogs,
+              shops, directories, classifieds and community sites. Start with a
+              one-time fix-up, keep it running for a flat monthly fee, or let me
+              grow it and share only in the money I add.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -204,6 +204,10 @@ export default function CarePage() {
               ten years looking after a company's ad-supported sites and keeping
               their AdSense money coming in. Most sites should start with the
               fix-up.
+            </p>
+            <p className="-mt-6 mb-10 max-w-2xl text-gray-400">
+              Running a bigger site, like a classifieds, marketplace or
+              membership site? Those get a custom quote after the free checkup.
             </p>
             <div className="grid gap-6 md:grid-cols-3">
               {plans.map((p) => (
