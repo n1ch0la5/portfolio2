@@ -3,31 +3,78 @@ import type { Metadata } from "next";
 // Unlisted page. Nothing on the site links here, and search engines are told
 // not to index it. Share the URL directly with site owners.
 
-// Paste your real links here. Until then, both buttons fall back to email.
-const BOOKING_URL = ""; // e.g. https://cal.com/nickjohnson/site-checkup
-const PLAN_URL = ""; // e.g. Stripe Payment Link for the monthly plan
+// Paste your real links here. Until then, every button falls back to email.
+const BOOKING_URL = ""; // e.g. Calendly link for the free checkup
+const FIXUP_URL = ""; // Stripe Payment Link: Site Fix-up
+const CARE_URL = ""; // Stripe Payment Link: Site Care
+const GROWTH_URL = ""; // Stripe Payment Link: Site Growth
 const EMAIL = "nickjohnson.builds@gmail.com";
 
-const PRICE = "$150";
-const SHARE = "10%";
+const SHARE = "20%";
 
 const bookHref =
   BOOKING_URL ||
   `mailto:${EMAIL}?subject=${encodeURIComponent("Free site checkup")}&body=${encodeURIComponent("Site address:\n\nWhat's bugging you about it:\n")}`;
-const planHref =
-  PLAN_URL ||
-  `mailto:${EMAIL}?subject=${encodeURIComponent("Start the Site Care plan")}&body=${encodeURIComponent("Site address:\n")}`;
+const mailPlan = (name: string) =>
+  `mailto:${EMAIL}?subject=${encodeURIComponent(`Start ${name}`)}&body=${encodeURIComponent("Site address:\n")}`;
+
+const plans = [
+  {
+    name: "Fix-up",
+    price: "$349",
+    per: "one time",
+    note: "Start here",
+    href: FIXUP_URL || mailPlan("a Site Fix-up"),
+    cta: "Book the fix-up",
+    items: [
+      "Updates, backups and security cleanup",
+      "ads.txt, ad and affiliate setup checked",
+      "Broken pages, links and forms fixed",
+      "The worst speed problems fixed",
+      "A short written report of what I did",
+    ],
+  },
+  {
+    name: "Care",
+    price: "$79",
+    per: "/ month",
+    note: "Keep it running",
+    href: CARE_URL || mailPlan("Site Care"),
+    cta: "Start Care",
+    items: [
+      "Updates, backups and uptime checks",
+      "Small fixes and changes",
+      "A quick monthly check for broken things",
+      "Month to month, cancel any time",
+    ],
+  },
+  {
+    name: "Growth",
+    price: "$199",
+    per: "/ month",
+    note: `+ ${SHARE} of revenue above your baseline`,
+    href: GROWTH_URL || mailPlan("Site Growth"),
+    cta: "Start Growth",
+    items: [
+      "Everything in Care",
+      "Ad and affiliate setup and tuning",
+      "Speed and page work aimed at earnings",
+      "Small features included",
+      "Month to month, cancel any time",
+    ],
+  },
+];
 
 export const metadata: Metadata = {
   title: "Site Care | Nick Johnson",
   description:
-    "I keep small websites fast, updated and earning, for a flat monthly fee plus a share of the revenue I help them make.",
+    "I keep small websites fast, updated and earning. A one-time fix-up, simple monthly care, or a growth plan where I share only in the money I add.",
   robots: { index: false, follow: false, nocache: true },
   alternates: { canonical: null },
   openGraph: {
     title: "Site Care | Nick Johnson",
     description:
-      "I keep small websites fast, updated and earning, for a flat monthly fee plus a share of the revenue I help them make.",
+      "I keep small websites fast, updated and earning. A one-time fix-up, simple monthly care, or a growth plan where I share only in the money I add.",
     url: "https://nicksjohnson.com/care",
     type: "website",
   },
@@ -66,14 +113,14 @@ const steps = [
   {
     n: "03",
     title: "Start the plan",
-    body: "If it looks right, start the monthly plan and I get to work. Cancel any month.",
+    body: "Pick the one-time fix-up or a monthly plan and I get to work. Monthly plans cancel any month.",
   },
 ];
 
 const faqs = [
   {
     q: "How does the revenue share work?",
-    a: `Each month you share your ad and affiliate dashboard totals, and I invoice ${SHARE} of what the site earned. If it earned nothing that month, you pay only the flat fee.`,
+    a: `It's only on the Growth plan. Before we start, we take your average monthly ad and affiliate income over the last 3 months as your baseline. Each month you share your dashboard totals, and I invoice ${SHARE} of anything above that baseline. If the site doesn't beat it, you pay only the flat fee.`,
   },
   {
     q: "Who owns the site?",
@@ -110,8 +157,9 @@ export default function CarePage() {
             </h1>
             <p className="mb-10 max-w-2xl text-lg text-gray-400">
               For people who own a blog, a hobby site or a small shop and would
-              rather not babysit it. You pay a flat monthly fee plus a small
-              share of the money the site makes, so I only do well when it does.
+              rather not babysit it. Start with a one-time fix-up, keep it
+              running for a flat monthly fee, or let me grow it and share only
+              in the money I add.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -124,7 +172,7 @@ export default function CarePage() {
                 href="#plan"
                 className="border border-white/15 px-8 py-4 font-semibold text-gray-200 transition-colors hover:border-white/30 hover:text-white"
               >
-                See the plan
+                See prices
               </a>
             </div>
           </div>
@@ -133,7 +181,7 @@ export default function CarePage() {
         <section className="border-t border-white/10 py-20">
           <div className="mx-auto max-w-5xl px-6">
             <h2 className="mb-10 text-2xl font-bold sm:text-3xl">
-              What the plan covers
+              What I do
             </h2>
             <div className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2">
               {included.map((item) => (
@@ -147,50 +195,48 @@ export default function CarePage() {
         </section>
 
         <section id="plan" className="border-t border-white/10 py-20">
-          <div className="mx-auto grid max-w-5xl gap-10 px-6 md:grid-cols-[1.2fr_1fr]">
-            <div>
-              <h2 className="mb-6 text-2xl font-bold sm:text-3xl">
-                One plan, priced so we both win
-              </h2>
-              <p className="mb-6 text-gray-400">
-                I've done this before. For ten years I looked after a
-                company's ad-supported websites for a flat monthly fee plus 10%
-                of their AdSense revenue, and kept that money coming in month
-                after month. I've been building and running websites for 17
-                years.
-              </p>
-              <p className="text-gray-400">
-                The share is what keeps me focused on the things that actually
-                move your numbers, not just on keeping the lights on.
-              </p>
-            </div>
-            <div className="border border-white/10 bg-white/5 p-8">
-              <p className="mb-2 font-mono text-xs uppercase tracking-wider text-gray-500">
-                Site Care plan
-              </p>
-              <p className="mb-1 text-4xl font-bold">
-                {PRICE}
-                <span className="text-lg font-normal text-gray-400">
-                  {" "}
-                  / month
-                </span>
-              </p>
-              <p className="mb-6 font-mono text-sm text-blue-400">
-                + {SHARE} of ad and affiliate revenue
-              </p>
-              <ul className="mb-8 space-y-2 text-sm text-gray-400">
-                <li>Updates, backups and uptime checks</li>
-                <li>Speed and fix-it work every month</li>
-                <li>Ad and affiliate setup and tuning</li>
-                <li>Small features included</li>
-                <li>Month to month, cancel any time</li>
-              </ul>
-              <a
-                href={planHref}
-                className="block bg-blue-600 px-6 py-3 text-center font-semibold text-white transition-colors hover:bg-blue-500"
-              >
-                Start the plan
-              </a>
+          <div className="mx-auto max-w-5xl px-6">
+            <h2 className="mb-4 text-2xl font-bold sm:text-3xl">
+              Three ways to work together
+            </h2>
+            <p className="mb-10 max-w-2xl text-gray-400">
+              I've been building and running websites for 17 years, including
+              ten years looking after a company's ad-supported sites and keeping
+              their AdSense money coming in. Most sites should start with the
+              fix-up.
+            </p>
+            <div className="grid gap-6 md:grid-cols-3">
+              {plans.map((p) => (
+                <div
+                  key={p.name}
+                  className="flex flex-col border border-white/10 bg-white/5 p-8"
+                >
+                  <p className="mb-2 font-mono text-xs uppercase tracking-wider text-gray-500">
+                    {p.name}
+                  </p>
+                  <p className="mb-1 text-4xl font-bold">
+                    {p.price}
+                    <span className="text-lg font-normal text-gray-400">
+                      {" "}
+                      {p.per}
+                    </span>
+                  </p>
+                  <p className="mb-6 font-mono text-sm text-blue-400">
+                    {p.note}
+                  </p>
+                  <ul className="mb-8 flex-1 space-y-2 text-sm text-gray-400">
+                    {p.items.map((i) => (
+                      <li key={i}>{i}</li>
+                    ))}
+                  </ul>
+                  <a
+                    href={p.href}
+                    className="block bg-blue-600 px-6 py-3 text-center font-semibold text-white transition-colors hover:bg-blue-500"
+                  >
+                    {p.cta}
+                  </a>
+                </div>
+              ))}
             </div>
           </div>
         </section>
