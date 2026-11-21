@@ -6,7 +6,8 @@ import type { Metadata } from "next";
 // Paste your real links here. Until then, every button falls back to email.
 const BOOKING_URL = ""; // e.g. Calendly link for the free checkup
 const FIXUP_URL = ""; // Stripe Payment Link: Site Fix-up
-const CARE_URL = ""; // Stripe Payment Link: Site Care
+const CARE_URL = ""; // Stripe Payment Link: Site Care, monthly
+const CARE_YEARLY_URL = ""; // Stripe Payment Link: Site Care, yearly
 const GROWTH_URL = ""; // Stripe Payment Link: Site Growth
 const EMAIL = "nickjohnson.builds@gmail.com";
 
@@ -39,13 +40,18 @@ const plans = [
     price: "$79",
     per: "/ month",
     note: "Keep it running",
-    href: CARE_URL || mailPlan("Site Care"),
-    cta: "Start Care",
+    href: CARE_URL || mailPlan("Site Care (monthly)"),
+    cta: "Start Care monthly",
+    alt: {
+      href: CARE_YEARLY_URL || mailPlan("Site Care (yearly)"),
+      label: "Or $790/year, Fix-up included",
+    },
     items: [
       "Updates, backups and uptime checks",
       "Small fixes and changes",
       "A quick monthly check for broken things",
-      "Month to month, cancel any time",
+      "Monthly: cancel any time",
+      "Yearly: two months free, plus the Fix-up",
     ],
   },
   {
@@ -56,11 +62,11 @@ const plans = [
     href: GROWTH_URL || mailPlan("Site Growth"),
     cta: "Start Growth",
     items: [
+      "The Fix-up, included in month one",
       "Everything in Care",
       "Ad and affiliate setup and tuning",
       "Speed and page work aimed at earnings",
-      "Small features included",
-      "Month to month, cancel any time",
+      "3-month minimum, then month to month",
     ],
   },
 ];
@@ -113,7 +119,7 @@ const steps = [
   {
     n: "03",
     title: "Start the plan",
-    body: "Pick the one-time fix-up or a monthly plan and I get to work. Monthly plans cancel any month.",
+    body: "Pick the one-time Fix-up, Care, or Growth, and I get to work.",
   },
 ];
 
@@ -132,7 +138,7 @@ const faqs = [
   },
   {
     q: "Is there a contract?",
-    a: "No. It's month to month. If it isn't worth it to you, stop.",
+    a: "The Fix-up is a one-time job, and monthly Care cancels any month. Yearly Care is paid up front and includes the Fix-up. Growth has a 3-month minimum because the Fix-up is included and ad and affiliate changes take a few months to show; after that it's month to month.",
   },
 ];
 
@@ -239,6 +245,19 @@ export default function CarePage() {
                   >
                     {p.cta}
                   </a>
+                  {"alt" in p && p.alt ? (
+                    <a
+                      href={p.alt.href}
+                      className="mt-3 block text-center text-sm text-blue-400 underline-offset-4 hover:underline"
+                    >
+                      {p.alt.label}
+                    </a>
+                  ) : (
+                    // Keeps the buttons lined up across the cards.
+                    <span aria-hidden className="mt-3 hidden text-sm md:block">
+                      &nbsp;
+                    </span>
+                  )}
                 </div>
               ))}
             </div>
